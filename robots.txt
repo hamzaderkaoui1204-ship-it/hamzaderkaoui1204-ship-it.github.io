@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hamzaderkaoui1204-ship-it.github.io/sitemap.xml
