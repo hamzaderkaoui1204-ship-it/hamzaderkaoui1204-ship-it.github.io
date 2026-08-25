@@ -11,8 +11,13 @@
 <meta property="og:description" content="Estimate new flooring cost by room size and material. Compare laminate, LVP, hardwood and carpet with installation labor.">
 <meta property="og:url" content="https://hamzaderkaoui1204-ship-it.github.io/flooring-cost/">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%23e8622c%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2222%22%20font-family%3D%22Arial%22%20font-weight%3D%22bold%22%20font-size%3D%2216%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3ECC%3C%2Ftext%3E%3C%2Fsvg%3E">
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%228%22%20fill%3D%22%23E35B24%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2221%22%20font-family%3D%22Arial%22%20font-weight%3D%22800%22%20font-size%3D%2214%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%3ECC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Geist','system-ui','sans-serif'],mono:['JetBrains Mono','monospace']},colors:{ink:'#141A26',muted:'#6B7280',line:'#E7E5E0',paper:'#FFFFFF',bg:'#F9F8F6',accent:'#E35B24',accentDark:'#C94E1B'},maxWidth:{site:'1280px'}}}}
+</script>
+<style>*{font-variant-ligatures:common-ligatures}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}.reveal.in{opacity:1;transform:translateY(0)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7025216840306629" crossorigin="anonymous"></script>
 <meta name="google-site-verification" content="PENDING_GSC_TOKEN">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -20,115 +25,151 @@
 </head>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the cheapest flooring to install?","acceptedAnswer":{"@type":"Answer","text":"Carpet at $4–$9 per square foot installed, followed closely by laminate at $6–$12. LVP is the best value if water resistance matters — kitchens, baths, basements."}},{"@type":"Question","name":"How much flooring do I need for a 200 sq ft room?","acceptedAnswer":{"@type":"Answer","text":"Buy 220 sq ft — 10% extra for cutting waste (15% for diagonal layouts). Keep leftovers: manufacturers discontinue patterns constantly."}},{"@type":"Question","name":"Can I install LVP myself?","acceptedAnswer":{"@type":"Answer","text":"Click-lock LVP is the most DIY-friendly hard flooring — a weekend project for a bedroom with basic tools. Save the labor line ($4/sq ft) if you are patient with layouts."}},{"@type":"Question","name":"Does hardwood flooring add home value?","acceptedAnswer":{"@type":"Answer","text":"Yes — hardwood is a top buyer preference and typically recoups 70–100% of cost at resale. Refinishing existing wood ($3–$8/sq ft) beats replacing it."}},{"@type":"Question","name":"How long does flooring installation take?","acceptedAnswer":{"@type":"Answer","text":"A pro lays 300–500 sq ft of LVP or laminate per day, hardwood 200–300 sq ft. Removal adds a day. A whole single-story home is typically a 3–5 day job."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hamzaderkaoui1204-ship-it.github.io/"},{"@type":"ListItem","position":2,"name":"Interior","item":"https://hamzaderkaoui1204-ship-it.github.io/#interior"},{"@type":"ListItem","position":3,"name":"Flooring Cost Calculator","item":"https://hamzaderkaoui1204-ship-it.github.io/flooring-cost/"}]}</script>
-<body>
-<a class="skip" href="#main">Skip to calculator</a>
-<header class="site-header">
-  <a class="brand" href="/">Cost<span>Cruncher</span></a>
-  <nav aria-label="Categories"><a href="/#exterior---yard">Exterior & Yard</a>
+<body class="bg-bg text-ink font-sans antialiased overflow-x-hidden">
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-accent text-white px-3 py-2 rounded-full" href="#main">Skip to content</a>
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur-xl border-b border-line">
+  <div class="max-w-site mx-auto px-5 md:px-8 h-[64px] flex items-center justify-between gap-6">
+    <a href="/" class="flex items-center gap-3 shrink-0">
+      <span class="w-8 h-8 rounded-lg bg-ink text-white grid place-items-center font-extrabold text-[13px] tracking-tight">CC</span>
+      <span class="font-extrabold tracking-[-0.03em] text-[17px]">Cost<span class="text-accent">Cruncher</span></span>
+      <span class="hidden sm:inline text-[10px] leading-none tracking-[0.14em] font-semibold text-muted border border-line rounded-full px-2 py-1">2026 EDITION</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-1 text-[13.5px] font-medium text-muted" aria-label="Categories"><a href="/#exterior---yard">Exterior & Yard</a>
   <a href="/#interior">Interior</a>
   <a href="/#systems---energy">Systems & Energy</a>
   <a href="/about/">About</a></nav>
+    <div class="flex items-center gap-2">
+      <div class="hidden md:flex items-center gap-2 text-[11px] font-medium text-muted mr-2"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Updated quarterly</div>
+      <a href="/#all" class="hidden sm:inline-flex items-center justify-center h-9 px-5 rounded-full bg-ink text-white text-[13px] font-semibold hover:bg-zinc-900 transition">Explore calculators</a>
+      <button id="mobileMenuBtn" class="lg:hidden w-9 h-9 grid place-items-center rounded-full border border-line bg-white" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobileNav" class="hidden lg:hidden border-t border-line bg-white px-5 py-4">
+    <div class="flex flex-col gap-2 text-[14px] font-medium"><a class="py-2" href="/#exterior---yard">Exterior & Yard</a>
+  <a class="py-2" href="/#interior">Interior</a>
+  <a class="py-2" href="/#systems---energy">Systems & Energy</a>
+  <a class="py-2" href="/about/">About</a></div>
+  </div>
 </header>
 <main id="main">
-<div class="container">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/#interior">Interior</a> › Flooring Cost Calculator</nav>
-<h1>Flooring Cost Calculator</h1>
-<p class="lead">Compare laminate, LVP, hardwood and carpet costs — materials, underlayment and labor itemized.</p>
-<img class="hero-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20rx%3D%2212%22%20fill%3D%22%23f7f6f3%22%20stroke%3D%22%23e4e2dc%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22185%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20font-weight%3D%22700%22%20fill%3D%22%231a2332%22%3EFlooring%20Cost%20Calculator%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22215%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20fill%3D%22%234a5568%22%3E2026%20cost%20breakdown%20%E2%80%A2%20materials%20%2B%20labor%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Flooring Cost Calculator cost breakdown chart by size and grade 2026" width="800" height="400" loading="lazy">
+<div class="max-w-site mx-auto px-5 md:px-8 pt-6">
+  <nav class="text-[12.5px] text-muted" aria-label="Breadcrumb"><a href="/" class="hover:text-ink">Home</a> <span class="mx-1.5 text-line">/</span> <a href="/#interior" class="hover:text-ink">Interior</a> <span class="mx-1.5 text-line">/</span> <span class="text-ink font-medium">Flooring</span></nav>
 
-<div class="calc-grid">
-  <section class="calc-panel" aria-label="Calculator inputs">
-    <h2>Enter your details</h2>
-    <form id="calc-form" autocomplete="off">
-      <div id="fields"></div>
-      <button type="submit" class="btn">Calculate</button>
-    </form>
-  </section>
-  <section class="result-panel" aria-label="Results" id="results">
-    <div class="placeholder">
-      <p>Your line-item estimate appears here.</p>
+  <!-- Title block -->
+  <div class="mt-4 grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+    <div>
+      <div class="inline-flex items-center gap-2 text-[11px] tracking-[0.14em] font-semibold uppercase text-muted"><span class="w-6 h-px bg-accent"></span> Interior • Updated 2026 • Line-item math</div>
+      <h1 class="mt-3 text-[30px] md:text-[40px] font-extrabold tracking-[-0.04em] leading-[0.95]">Flooring Cost Calculator</h1>
+      <p class="mt-3 text-[16px] leading-relaxed text-muted max-w-[60ch]">Compare laminate, LVP, hardwood and carpet costs — materials, underlayment and labor itemized.</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-[11px] font-medium">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-line"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Materials + labor</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-line"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Formula shown</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-line">No email required</span>
+      </div>
     </div>
-  </section>
+    <div class="rounded-[20px] overflow-hidden border border-line bg-white shadow-[0_16px_40px_rgba(20,26,38,0.08)]">
+      <div class="aspect-[16/10] overflow-hidden bg-zinc-100">
+        <img src="https://source.unsplash.com/1280x720/?flooring%2Chardwood-floor" alt="Flooring Cost Calculator — Interior project photo" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://picsum.photos/seed/flooring-cost/800/500'">
+      </div>
+      <div class="px-4 py-3 flex items-center gap-3">
+        <img src="https://source.unsplash.com/64x64/?flooring%2Chardwood-floor" alt="" class="w-10 h-10 rounded-lg object-cover border border-line" loading="lazy" onerror="this.style.display='none'">
+        <div class="text-[12px] leading-tight"><div class="font-semibold">Flooring</div><div class="text-muted">2026 cost breakdown • materials + labor</div></div>
+        <span class="ml-auto text-[11px] font-mono font-medium px-2 py-1 rounded-full bg-bg border border-line">72 calculators</span>
+      </div>
+    </div>
   </div>
 
-<div class="ad-wrap">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-
-<section class="prose">
-  <h2>How this estimate works</h2>
-  <p>Flooring quotes are quoted per square foot installed, but the sticker rate hides removal, underlayment and waste. Luxury vinyl plank at $7–$16 installed and laminate at $6–$12 look similar in a showroom but differ in lifespan and resale value. Run your room through this calculator to see the real totals.</p>
-  <p>Enter your room dimensions, pick a material, and decide whether old flooring needs removal. You will get a full 2026 breakdown: materials with waste factor, underlayment, removal and installation labor.</p>
-  <h3>What's included</h3>
-  <ul class="check-list"><li>Flooring material with 10% waste</li><li>Underlayment or pad</li><li>Installation labor</li><li>Optional removal and disposal</li></ul>
-  <h3>Not included</h3>
-  <ul class="x-list"><li>Subfloor repair or leveling</li><li>Baseboard and trim work</li><li>Furniture moving (often $50–$150/room)</li><li>Stairs (quoted per step, $50–$150)</li></ul>
-  <h3>How we calculate</h3>
-  <p>Area is increased 10% for cutting waste. Material prices per sq ft: laminate $3.75, LVP $4.75, engineered hardwood $7.50, solid hardwood $10, carpet $3.25. Labor: laminate $3.50, LVP $4.00, engineered $5.50, solid $6.50, carpet $2.50. Underlayment/pad adds $0.50–$0.55/sq ft; old-floor removal and disposal $1.50/sq ft.</p>
-
-  <h2>Flooring cost per square foot installed (2026)</h2>
-  <div class="table-wrap">
-  <table>
-    <thead><tr><th>Material</th><th>Material</th><th>Installed total</th></tr></thead>
-    <tbody><tr><td>Carpet</td><td>$2.50 – $4.50</td><td>$4 – $9</td></tr><tr><td>Laminate</td><td>$2 – $5</td><td>$6 – $12</td></tr><tr><td>Luxury vinyl plank</td><td>$3 – $6</td><td>$7 – $16</td></tr><tr><td>Engineered hardwood</td><td>$5 – $10</td><td>$12 – $22</td></tr><tr><td>Solid hardwood</td><td>$7 – $13</td><td>$15 – $28</td></tr></tbody>
-  </table>
+  <!-- Calculator -->
+  <div class="mt-8 grid lg:grid-cols-[1fr_1.15fr] gap-6">
+    <section class="rounded-[24px] border border-line bg-white p-6 md:p-7" aria-label="Calculator inputs">
+      <h2 class="text-[16px] font-extrabold tracking-tight">Enter your details</h2>
+      <p class="text-[13px] text-muted mt-1">Numbers run live in your browser — nothing is sent.</p>
+      <form id="calc-form" autocomplete="off" class="mt-5">
+        <div id="fields" class="space-y-4"></div>
+        <button type="submit" class="mt-6 w-full h-[46px] rounded-full bg-accent text-white font-semibold text-[14px] hover:bg-accentDark transition active:scale-[0.98] shadow-[0_8px_16px_rgba(227,91,36,0.25)]">Calculate</button>
+        <p class="mt-3 text-center text-[11px] text-muted">Press Calculate or change any field — results update instantly</p>
+      </form>
+    </section>
+    <section class="rounded-[24px] border border-line bg-white p-6 md:p-7 lg:sticky lg:top-[84px] self-start" aria-label="Results" id="results">
+      <div class="placeholder text-center py-10">
+        <div class="w-12 h-12 rounded-full bg-bg border border-line grid place-items-center mx-auto text-muted">→</div>
+        <p class="mt-3 text-[14px] font-medium">Your line-item estimate appears here</p>
+        <p class="text-[12px] text-muted">Fill the form and hit Calculate</p>
+      </div>
+    </section>
   </div>
 
-  <div class="ad-wrap">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <div class="mt-8 rounded-[16px] border border-dashed border-line bg-white p-3 flex items-center justify-center min-h-[90px]">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <h2>Recommended tools &amp; supplies</h2>
-  <p>If you're doing this yourself, these are the basics most DIYers end up buying:</p>
-  <ul class="shop-list">
-    <li><a href="https://www.amazon.com/s?k=painting%2Band%2Bflooring%2Btools&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank">Basic hand &amp; power tools on Amazon →</a></li>
-    <li><a href="https://www.amazon.com/s?k=Flooring%20materials&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank">Materials for this project on Amazon →</a></li>
-  </ul>
-  <p class="disclosure">CostCruncher is reader-supported. If you buy through links on this page we may earn a commission at no cost to you.</p>
+  <section class="mt-8 max-w-[760px]">
+    <h2 class="text-[20px] font-extrabold tracking-[-0.03em]">How this estimate works</h2>
+    <div class="mt-3 space-y-3 text-[15px] leading-relaxed text-muted"><p>Flooring quotes are quoted per square foot installed, but the sticker rate hides removal, underlayment and waste. Luxury vinyl plank at $7–$16 installed and laminate at $6–$12 look similar in a showroom but differ in lifespan and resale value. Run your room through this calculator to see the real totals.</p><p>Enter your room dimensions, pick a material, and decide whether old flooring needs removal. You will get a full 2026 breakdown: materials with waste factor, underlayment, removal and installation labor.</p></div>
 
-  <h2>Questions people ask</h2>
-  <div class="faq">
-    <details><summary>What is the cheapest flooring to install?</summary><p>Carpet at $4–$9 per square foot installed, followed closely by laminate at $6–$12. LVP is the best value if water resistance matters — kitchens, baths, basements.</p></details>
-    <details><summary>How much flooring do I need for a 200 sq ft room?</summary><p>Buy 220 sq ft — 10% extra for cutting waste (15% for diagonal layouts). Keep leftovers: manufacturers discontinue patterns constantly.</p></details>
-    <details><summary>Can I install LVP myself?</summary><p>Click-lock LVP is the most DIY-friendly hard flooring — a weekend project for a bedroom with basic tools. Save the labor line ($4/sq ft) if you are patient with layouts.</p></details>
-    <details><summary>Does hardwood flooring add home value?</summary><p>Yes — hardwood is a top buyer preference and typically recoups 70–100% of cost at resale. Refinishing existing wood ($3–$8/sq ft) beats replacing it.</p></details>
-    <details><summary>How long does flooring installation take?</summary><p>A pro lays 300–500 sq ft of LVP or laminate per day, hardwood 200–300 sq ft. Removal adds a day. A whole single-story home is typically a 3–5 day job.</p></details>
-  </div>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-line bg-white p-5">
+        <h3 class="text-[13px] tracking-[0.1em] font-semibold uppercase">What is included</h3>
+        <ul class="mt-3 space-y-2 text-[14px] leading-relaxed"><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Flooring material with 10% waste</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Underlayment or pad</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Installation labor</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Optional removal and disposal</span></li></ul>
+      </div>
+      <div class="rounded-2xl border border-line bg-white p-5">
+        <h3 class="text-[13px] tracking-[0.1em] font-semibold uppercase">Not included</h3>
+        <ul class="mt-3 space-y-2 text-[14px] leading-relaxed text-muted"><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Subfloor repair or leveling</span></li><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Baseboard and trim work</span></li><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Furniture moving (often $50–$150/room)</span></li><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Stairs (quoted per step, $50–$150)</span></li></ul>
+      </div>
+    </div>
 
-  <h2>Related calculators</h2>
-  <div class="related-grid">
-    <a class="related-card" href="/interior-painting-cost/">Interior Painting Cost</a>
-    <a class="related-card" href="/drywall-cost/">Drywall Cost</a>
-    <a class="related-card" href="/moving-cost/">Moving Cost</a>
-  </div>
-</section>
+    <div class="mt-8 rounded-2xl border border-line bg-bg p-6">
+      <h3 class="text-[14px] font-bold">How we calculate</h3>
+      <p class="mt-2 text-[14px] leading-relaxed text-muted">Area is increased 10% for cutting waste. Material prices per sq ft: laminate $3.75, LVP $4.75, engineered hardwood $7.50, solid hardwood $10, carpet $3.25. Labor: laminate $3.50, LVP $4.00, engineered $5.50, solid $6.50, carpet $2.50. Underlayment/pad adds $0.50–$0.55/sq ft; old-floor removal and disposal $1.50/sq ft.</p>
+    </div>
+
+    <h2 class="mt-10 text-[18px] font-extrabold tracking-[-0.03em]">Flooring cost per square foot installed (2026)</h2>
+    <div class="mt-3 overflow-hidden rounded-2xl border border-line bg-white">
+      <div class="overflow-x-auto">
+        <table class="w-full text-[13.5px]"><thead class="bg-bg text-left"><tr><th class="px-4 py-3 font-semibold whitespace-nowrap">Material</th><th class="px-4 py-3 font-semibold whitespace-nowrap">Material</th><th class="px-4 py-3 font-semibold whitespace-nowrap">Installed total</th></tr></thead><tbody class="divide-y divide-line"><tr class="hover:bg-bg/60"><td class="px-4 py-3">Carpet</td><td class="px-4 py-3">$2.50 – $4.50</td><td class="px-4 py-3">$4 – $9</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">Laminate</td><td class="px-4 py-3">$2 – $5</td><td class="px-4 py-3">$6 – $12</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">Luxury vinyl plank</td><td class="px-4 py-3">$3 – $6</td><td class="px-4 py-3">$7 – $16</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">Engineered hardwood</td><td class="px-4 py-3">$5 – $10</td><td class="px-4 py-3">$12 – $22</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">Solid hardwood</td><td class="px-4 py-3">$7 – $13</td><td class="px-4 py-3">$15 – $28</td></tr></tbody></table>
+      </div>
+    </div>
+
+    <div class="mt-8 rounded-[16px] border border-dashed border-line bg-white p-3 flex items-center justify-center min-h-[90px]">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2 class="mt-10 text-[18px] font-extrabold tracking-[-0.03em]">Recommended tools & supplies</h2>
+    <p class="mt-2 text-[14px] text-muted">If you are doing this yourself, these are the basics most DIYers end up buying:</p>
+    <div class="mt-4 grid gap-3">
+      <a href="https://www.amazon.com/s?k=painting%20and%20flooring%20tools&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank" class="flex items-center justify-between p-4 rounded-2xl border border-line bg-white hover:border-ink/15 hover:shadow-[0_6px_16px_rgba(20,26,38,0.06)] transition"><span class="text-[14px] font-medium">Basic hand & power tools on Amazon</span><span class="text-accent font-semibold">→</span></a>
+      <a href="https://www.amazon.com/s?k=Flooring%20materials&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank" class="flex items-center justify-between p-4 rounded-2xl border border-line bg-white hover:border-ink/15 hover:shadow-[0_6px_16px_rgba(20,26,38,0.06)] transition"><span class="text-[14px] font-medium">Materials for this project on Amazon</span><span class="text-accent font-semibold">→</span></a>
+    </div>
+    <p class="mt-3 text-[11px] text-muted">CostCruncher is reader-supported. If you buy through links we may earn a commission at no cost to you.</p>
+
+    <h2 class="mt-10 text-[18px] font-extrabold tracking-[-0.03em]">Questions people ask</h2>
+    <div class="mt-3 space-y-2">
+      <details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">What is the cheapest flooring to install?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">Carpet at $4–$9 per square foot installed, followed closely by laminate at $6–$12. LVP is the best value if water resistance matters — kitchens, baths, basements.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">How much flooring do I need for a 200 sq ft room?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">Buy 220 sq ft — 10% extra for cutting waste (15% for diagonal layouts). Keep leftovers: manufacturers discontinue patterns constantly.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">Can I install LVP myself?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">Click-lock LVP is the most DIY-friendly hard flooring — a weekend project for a bedroom with basic tools. Save the labor line ($4/sq ft) if you are patient with layouts.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">Does hardwood flooring add home value?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">Yes — hardwood is a top buyer preference and typically recoups 70–100% of cost at resale. Refinishing existing wood ($3–$8/sq ft) beats replacing it.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">How long does flooring installation take?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">A pro lays 300–500 sq ft of LVP or laminate per day, hardwood 200–300 sq ft. Removal adds a day. A whole single-story home is typically a 3–5 day job.</p></details>
+    </div>
+
+    <h2 class="mt-10 text-[16px] font-extrabold tracking-tight">Related calculators</h2>
+    <div class="mt-3 flex flex-wrap gap-2">
+      <a href="/interior-painting-cost/" class="px-4 py-2 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20 hover:shadow-sm transition">Interior Painting</a><a href="/drywall-cost/" class="px-4 py-2 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20 hover:shadow-sm transition">Drywall</a><a href="/moving-cost/" class="px-4 py-2 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20 hover:shadow-sm transition">Moving</a>
+    </div>
+  </section>
 </div>
 </main>
-<footer class="site-footer">
-  <div class="foot-grid">
-    <div>
-      <a class="brand" href="/">Cost<span>Cruncher</span></a>
-      <p>Free 2026 cost calculators for home improvement projects. Independent estimates — we sell nothing, we quote nobody.</p>
+<footer class="mt-14 bg-ink text-white">
+  <div class="max-w-site mx-auto px-5 md:px-8 py-10">
+    <div class="grid md:grid-cols-[1.6fr_0.8fr_0.8fr] gap-8">
+      <div>
+        <div class="flex items-center gap-3"><span class="w-8 h-8 rounded-lg bg-white text-ink grid place-items-center font-extrabold text-[13px]">CC</span><span class="font-extrabold tracking-tight">CostCruncher</span><span class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Free 2026 calculators</span></div>
+        <p class="mt-3 text-[13px] leading-relaxed text-white/60 max-w-[44ch]">Free 2026 cost calculators for home improvement projects. Independent estimates — we sell nothing, we quote nobody.</p>
+      </div>
+      <div><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Popular</div><div class="mt-3 grid gap-1.5 text-[13px]"><a href="/concrete-slab-cost/" class="text-white/80 hover:text-white">Concrete slab</a><a href="/fence-cost/" class="text-white/80 hover:text-white">Fence</a><a href="/deck-cost/" class="text-white/80 hover:text-white">Deck</a><a href="/moving-cost/" class="text-white/80 hover:text-white">Moving</a></div></div>
+      <div><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Site</div><div class="mt-3 grid gap-1.5 text-[13px]"><a href="/about/" class="text-white/80 hover:text-white">About</a><a href="/privacy/" class="text-white/80 hover:text-white">Privacy</a><a href="/disclaimer/" class="text-white/80 hover:text-white">Disclaimer</a><a href="/sitemap.xml" class="text-white/80 hover:text-white">Sitemap</a></div></div>
     </div>
-    <div>
-      <strong>Popular</strong>
-      <a href="/concrete-slab-cost/">Concrete slab</a>
-      <a href="/fence-cost/">Fence</a>
-      <a href="/deck-cost/">Deck</a>
-      <a href="/moving-cost/">Moving</a>
-    </div>
-    <div>
-      <strong>Site</strong>
-      <a href="/about/">About</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/disclaimer/">Disclaimer</a>
-      <a href="/sitemap.xml">Sitemap</a>
-    </div>
+    <div class="mt-8 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-3 justify-between text-[12px] text-white/50"><span>© 2026 CostCruncher · Estimates only — get 3 quotes before hiring.</span><span>As an Amazon Associate we earn from qualifying purchases.</span></div>
   </div>
-  <p class="legal">© 2026 CostCruncher · Estimates only — get 3 quotes before hiring. As an Amazon Associate we earn from qualifying purchases.</p>
 </footer>
+<script>document.getElementById('mobileMenuBtn')?.addEventListener('click',()=>document.getElementById('mobileNav')?.classList.toggle('hidden'));</script>
 </body>
 </html>
 <script>window.CC_DATA = {"slug":"flooring-cost","title":"Flooring Cost Calculator","inputs":[{"type":"number","id":"length","label":"Room length","unit":"ft","def":16,"min":4,"max":100,"step":1},{"type":"number","id":"width","label":"Room width","unit":"ft","def":12,"min":4,"max":100,"step":1},{"type":"select","id":"material","label":"Flooring material","def":"lvp","options":[{"v":"laminate","l":"Laminate ($3.75/sq ft material)"},{"v":"lvp","l":"Luxury vinyl plank — LVP ($4.75)"},{"v":"engineered","l":"Engineered hardwood ($7.50)"},{"v":"solid","l":"Solid hardwood ($10.00)"},{"v":"carpet","l":"Carpet ($3.25)"}]},{"type":"checkbox","id":"removal","label":"Remove old flooring","def":false}],"method":"Area is increased 10% for cutting waste. Material prices per sq ft: laminate $3.75, LVP $4.75, engineered hardwood $7.50, solid hardwood $10, carpet $3.25. Labor: laminate $3.50, LVP $4.00, engineered $5.50, solid $6.50, carpet $2.50. Underlayment/pad adds $0.50–$0.55/sq ft; old-floor removal and disposal $1.50/sq ft.","logic":"function (v) {\n    var area = v.length * v.width;\n    var warea = area * 1.1;\n    var m = { laminate: [3.75, 3.5], lvp: [4.75, 4], engineered: [7.5, 5.5], solid: [10, 6.5], carpet: [3.25, 2.5] };\n    var r = m[v.material] || m.lvp;\n    var items = [];\n    items.push({ label: 'Flooring material', detail: Math.round(warea) + ' sq ft (incl. 10% waste) @ $' + r[0].toFixed(2), amount: warea * r[0] });\n    items.push({ label: 'Underlayment / pad', detail: Math.round(area) + ' sq ft @ $0.50', amount: area * 0.5 });\n    if (v.removal) items.push({ label: 'Old floor removal and disposal', detail: Math.round(area) + ' sq ft @ $1.50', amount: area * 1.5 });\n    items.push({ label: 'Installation labor', detail: Math.round(area) + ' sq ft @ $' + r[1].toFixed(2), amount: area * r[1] });\n    var total = 0; items.forEach(function (i) { total += i.amount; });\n    return { items: items, total: total, low: total * 0.85, high: total * 1.3, per: { label: 'per square foot', value: total / Math.max(area, 1) }, note: 'Stairs add $50–$150 per step. Ceramic tile ($9–$20/sq ft installed) and sheet vinyl are priced separately.' };\n  }"};</script>

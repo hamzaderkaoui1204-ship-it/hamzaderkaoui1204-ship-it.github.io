@@ -11,8 +11,13 @@
 <meta property="og:description" content="Free concrete slab cost calculator. Estimate material and labor costs by size, thickness and finish — with the full math shown. Updated for 2026.">
 <meta property="og:url" content="https://hamzaderkaoui1204-ship-it.github.io/concrete-slab-cost/">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%23e8622c%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2222%22%20font-family%3D%22Arial%22%20font-weight%3D%22bold%22%20font-size%3D%2216%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3ECC%3C%2Ftext%3E%3C%2Fsvg%3E">
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%228%22%20fill%3D%22%23E35B24%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2221%22%20font-family%3D%22Arial%22%20font-weight%3D%22800%22%20font-size%3D%2214%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%3ECC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Geist','system-ui','sans-serif'],mono:['JetBrains Mono','monospace']},colors:{ink:'#141A26',muted:'#6B7280',line:'#E7E5E0',paper:'#FFFFFF',bg:'#F9F8F6',accent:'#E35B24',accentDark:'#C94E1B'},maxWidth:{site:'1280px'}}}}
+</script>
+<style>*{font-variant-ligatures:common-ligatures}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}.reveal.in{opacity:1;transform:translateY(0)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7025216840306629" crossorigin="anonymous"></script>
 <meta name="google-site-verification" content="PENDING_GSC_TOKEN">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -20,115 +25,151 @@
 </head>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much is a concrete slab per square foot?","acceptedAnswer":{"@type":"Answer","text":"A plain 4-inch slab runs $4.50–$7.00 per square foot installed. Thicker slabs, reinforcement, decorative finishes and difficult access push it to $8–$12 per square foot."}},{"@type":"Question","name":"How much concrete do I need for a 20×20 slab?","acceptedAnswer":{"@type":"Answer","text":"A 20×20 slab at 4 inches thick needs about 5 cubic yards of concrete (roughly 6,800 sq ft-in ÷ 27 × waste factor). At $165 per yard delivered, the concrete alone costs $825–$1,000."}},{"@type":"Question","name":"Is it cheaper to pour concrete yourself?","acceptedAnswer":{"@type":"Answer","text":"DIY saves labor ($2.80–$4 per sq ft) but you still pay for concrete, forms, reinforcement and tool rentals. It only makes sense for small slabs — a botched pour costs more to remove than a pro charge."}},{"@type":"Question","name":"Does a 6-inch slab cost much more than 4 inches?","acceptedAnswer":{"@type":"Answer","text":"Yes — roughly 50% more concrete by volume, plus rebar is standard at 6 inches. Expect $1.50–$2.50 more per square foot."}},{"@type":"Question","name":"How long does a concrete slab last?","acceptedAnswer":{"@type":"Answer","text":"A properly poured and cured slab lasts 50+ years. Control joints, good base compaction and reinforcement matter more than the brand of cement."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hamzaderkaoui1204-ship-it.github.io/"},{"@type":"ListItem","position":2,"name":"Exterior & Yard","item":"https://hamzaderkaoui1204-ship-it.github.io/#exterior---yard"},{"@type":"ListItem","position":3,"name":"Concrete Slab Cost Calculator","item":"https://hamzaderkaoui1204-ship-it.github.io/concrete-slab-cost/"}]}</script>
-<body>
-<a class="skip" href="#main">Skip to calculator</a>
-<header class="site-header">
-  <a class="brand" href="/">Cost<span>Cruncher</span></a>
-  <nav aria-label="Categories"><a href="/#exterior---yard">Exterior & Yard</a>
+<body class="bg-bg text-ink font-sans antialiased overflow-x-hidden">
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-accent text-white px-3 py-2 rounded-full" href="#main">Skip to content</a>
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur-xl border-b border-line">
+  <div class="max-w-site mx-auto px-5 md:px-8 h-[64px] flex items-center justify-between gap-6">
+    <a href="/" class="flex items-center gap-3 shrink-0">
+      <span class="w-8 h-8 rounded-lg bg-ink text-white grid place-items-center font-extrabold text-[13px] tracking-tight">CC</span>
+      <span class="font-extrabold tracking-[-0.03em] text-[17px]">Cost<span class="text-accent">Cruncher</span></span>
+      <span class="hidden sm:inline text-[10px] leading-none tracking-[0.14em] font-semibold text-muted border border-line rounded-full px-2 py-1">2026 EDITION</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-1 text-[13.5px] font-medium text-muted" aria-label="Categories"><a href="/#exterior---yard">Exterior & Yard</a>
   <a href="/#interior">Interior</a>
   <a href="/#systems---energy">Systems & Energy</a>
   <a href="/about/">About</a></nav>
+    <div class="flex items-center gap-2">
+      <div class="hidden md:flex items-center gap-2 text-[11px] font-medium text-muted mr-2"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Updated quarterly</div>
+      <a href="/#all" class="hidden sm:inline-flex items-center justify-center h-9 px-5 rounded-full bg-ink text-white text-[13px] font-semibold hover:bg-zinc-900 transition">Explore calculators</a>
+      <button id="mobileMenuBtn" class="lg:hidden w-9 h-9 grid place-items-center rounded-full border border-line bg-white" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobileNav" class="hidden lg:hidden border-t border-line bg-white px-5 py-4">
+    <div class="flex flex-col gap-2 text-[14px] font-medium"><a class="py-2" href="/#exterior---yard">Exterior & Yard</a>
+  <a class="py-2" href="/#interior">Interior</a>
+  <a class="py-2" href="/#systems---energy">Systems & Energy</a>
+  <a class="py-2" href="/about/">About</a></div>
+  </div>
 </header>
 <main id="main">
-<div class="container">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/#exterior---yard">Exterior &amp; Yard</a> › Concrete Slab Cost Calculator</nav>
-<h1>Concrete Slab Cost Calculator</h1>
-<p class="lead">Price a concrete slab by dimensions, thickness and finish — materials and labor broken out.</p>
-<img class="hero-img" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20rx%3D%2212%22%20fill%3D%22%23f7f6f3%22%20stroke%3D%22%23e4e2dc%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22185%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20font-weight%3D%22700%22%20fill%3D%22%231a2332%22%3EConcrete%20Slab%20Cost%20Calculator%3C%2Ftext%3E%3Ctext%20x%3D%22400%22%20y%3D%22215%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20fill%3D%22%234a5568%22%3E2026%20cost%20breakdown%20%E2%80%A2%20materials%20%2B%20labor%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Concrete Slab Cost Calculator cost breakdown chart by size and grade 2026" width="800" height="400" loading="lazy">
+<div class="max-w-site mx-auto px-5 md:px-8 pt-6">
+  <nav class="text-[12.5px] text-muted" aria-label="Breadcrumb"><a href="/" class="hover:text-ink">Home</a> <span class="mx-1.5 text-line">/</span> <a href="/#exterior---yard" class="hover:text-ink">Exterior &amp; Yard</a> <span class="mx-1.5 text-line">/</span> <span class="text-ink font-medium">Concrete Slab</span></nav>
 
-<div class="calc-grid">
-  <section class="calc-panel" aria-label="Calculator inputs">
-    <h2>Enter your details</h2>
-    <form id="calc-form" autocomplete="off">
-      <div id="fields"></div>
-      <button type="submit" class="btn">Calculate</button>
-    </form>
-  </section>
-  <section class="result-panel" aria-label="Results" id="results">
-    <div class="placeholder">
-      <p>Your line-item estimate appears here.</p>
+  <!-- Title block -->
+  <div class="mt-4 grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+    <div>
+      <div class="inline-flex items-center gap-2 text-[11px] tracking-[0.14em] font-semibold uppercase text-muted"><span class="w-6 h-px bg-accent"></span> Exterior &amp; Yard • Updated 2026 • Line-item math</div>
+      <h1 class="mt-3 text-[30px] md:text-[40px] font-extrabold tracking-[-0.04em] leading-[0.95]">Concrete Slab Cost Calculator</h1>
+      <p class="mt-3 text-[16px] leading-relaxed text-muted max-w-[60ch]">Price a concrete slab by dimensions, thickness and finish — materials and labor broken out.</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-[11px] font-medium">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-line"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Materials + labor</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-line"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Formula shown</span>
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-line">No email required</span>
+      </div>
     </div>
-  </section>
+    <div class="rounded-[20px] overflow-hidden border border-line bg-white shadow-[0_16px_40px_rgba(20,26,38,0.08)]">
+      <div class="aspect-[16/10] overflow-hidden bg-zinc-100">
+        <img src="https://source.unsplash.com/1280x720/?concrete%2Cfoundation%2Cslab" alt="Concrete Slab Cost Calculator — Exterior &amp; Yard project photo" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://picsum.photos/seed/concrete-slab-cost/800/500'">
+      </div>
+      <div class="px-4 py-3 flex items-center gap-3">
+        <img src="https://source.unsplash.com/64x64/?concrete%2Cfoundation%2Cslab" alt="" class="w-10 h-10 rounded-lg object-cover border border-line" loading="lazy" onerror="this.style.display='none'">
+        <div class="text-[12px] leading-tight"><div class="font-semibold">Concrete Slab</div><div class="text-muted">2026 cost breakdown • materials + labor</div></div>
+        <span class="ml-auto text-[11px] font-mono font-medium px-2 py-1 rounded-full bg-bg border border-line">72 calculators</span>
+      </div>
+    </div>
   </div>
 
-<div class="ad-wrap">
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-
-<section class="prose">
-  <h2>How this estimate works</h2>
-  <p>A new concrete slab is one of those projects where the final invoice rarely matches the first quote. Material prices swing by region, labor runs $3–$5 per square foot on its own, and extras like reinforcement, vapor barrier and finish work quietly add hundreds. This calculator adds it all up from your actual dimensions so you know what a fair number looks like.</p>
-  <p>Enter your slab size below and you will get a line-item estimate: ready-mix concrete delivered, reinforcement, forms, vapor barrier and finishing labor — plus the typical price range contractors quote in 2026.</p>
-  <h3>What's included</h3>
-  <ul class="check-list"><li>Ready-mix concrete delivered</li><li>Reinforcement (wire mesh or rebar)</li><li>Vapor barrier</li><li>Perimeter forms and stakes</li><li>Finishing labor (broom, trowel or aggregate)</li><li>Basic hand tools and supplies</li></ul>
-  <h3>Not included</h3>
-  <ul class="x-list"><li>Permits and inspections</li><li>Excavation, grading and fill dirt</li><li>Concrete pumping for hard-to-reach pours</li><li>Frost footings or thickened edges</li></ul>
-  <h3>How we calculate</h3>
-  <p>We estimate from national average 2026 prices: ready-mix concrete at roughly $165 per cubic yard delivered, wire mesh or rebar reinforcement, 6-mil vapor barrier, perimeter forms, and flatwork finishing labor at $2.80–$3.10+ per square foot depending on finish. A 12% waste factor is applied to concrete volume.</p>
-
-  <h2>Concrete slab cost by size (4-inch, broom finish)</h2>
-  <div class="table-wrap">
-  <table>
-    <thead><tr><th>Size</th><th>Typical installed cost</th></tr></thead>
-    <tbody><tr><td>10 × 10 ft (100 sq ft)</td><td>$550 – $950</td></tr><tr><td>12 × 20 ft (240 sq ft)</td><td>$1,200 – $2,000</td></tr><tr><td>20 × 20 ft (400 sq ft)</td><td>$1,900 – $3,100</td></tr><tr><td>24 × 24 ft (576 sq ft)</td><td>$2,700 – $4,400</td></tr><tr><td>30 × 30 ft (900 sq ft)</td><td>$4,000 – $6,600</td></tr><tr><td>40 × 60 ft (2,400 sq ft)</td><td>$10,000 – $16,500</td></tr></tbody>
-  </table>
+  <!-- Calculator -->
+  <div class="mt-8 grid lg:grid-cols-[1fr_1.15fr] gap-6">
+    <section class="rounded-[24px] border border-line bg-white p-6 md:p-7" aria-label="Calculator inputs">
+      <h2 class="text-[16px] font-extrabold tracking-tight">Enter your details</h2>
+      <p class="text-[13px] text-muted mt-1">Numbers run live in your browser — nothing is sent.</p>
+      <form id="calc-form" autocomplete="off" class="mt-5">
+        <div id="fields" class="space-y-4"></div>
+        <button type="submit" class="mt-6 w-full h-[46px] rounded-full bg-accent text-white font-semibold text-[14px] hover:bg-accentDark transition active:scale-[0.98] shadow-[0_8px_16px_rgba(227,91,36,0.25)]">Calculate</button>
+        <p class="mt-3 text-center text-[11px] text-muted">Press Calculate or change any field — results update instantly</p>
+      </form>
+    </section>
+    <section class="rounded-[24px] border border-line bg-white p-6 md:p-7 lg:sticky lg:top-[84px] self-start" aria-label="Results" id="results">
+      <div class="placeholder text-center py-10">
+        <div class="w-12 h-12 rounded-full bg-bg border border-line grid place-items-center mx-auto text-muted">→</div>
+        <p class="mt-3 text-[14px] font-medium">Your line-item estimate appears here</p>
+        <p class="text-[12px] text-muted">Fill the form and hit Calculate</p>
+      </div>
+    </section>
   </div>
 
-  <div class="ad-wrap">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <div class="mt-8 rounded-[16px] border border-dashed border-line bg-white p-3 flex items-center justify-center min-h-[90px]">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <h2>Recommended tools &amp; supplies</h2>
-  <p>If you're doing this yourself, these are the basics most DIYers end up buying:</p>
-  <ul class="shop-list">
-    <li><a href="https://www.amazon.com/s?k=concrete%2Band%2Bfencing%2Btools&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank">Basic hand &amp; power tools on Amazon →</a></li>
-    <li><a href="https://www.amazon.com/s?k=Concrete%20Slab%20materials&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank">Materials for this project on Amazon →</a></li>
-  </ul>
-  <p class="disclosure">CostCruncher is reader-supported. If you buy through links on this page we may earn a commission at no cost to you.</p>
+  <section class="mt-8 max-w-[760px]">
+    <h2 class="text-[20px] font-extrabold tracking-[-0.03em]">How this estimate works</h2>
+    <div class="mt-3 space-y-3 text-[15px] leading-relaxed text-muted"><p>A new concrete slab is one of those projects where the final invoice rarely matches the first quote. Material prices swing by region, labor runs $3–$5 per square foot on its own, and extras like reinforcement, vapor barrier and finish work quietly add hundreds. This calculator adds it all up from your actual dimensions so you know what a fair number looks like.</p><p>Enter your slab size below and you will get a line-item estimate: ready-mix concrete delivered, reinforcement, forms, vapor barrier and finishing labor — plus the typical price range contractors quote in 2026.</p></div>
 
-  <h2>Questions people ask</h2>
-  <div class="faq">
-    <details><summary>How much is a concrete slab per square foot?</summary><p>A plain 4-inch slab runs $4.50–$7.00 per square foot installed. Thicker slabs, reinforcement, decorative finishes and difficult access push it to $8–$12 per square foot.</p></details>
-    <details><summary>How much concrete do I need for a 20×20 slab?</summary><p>A 20×20 slab at 4 inches thick needs about 5 cubic yards of concrete (roughly 6,800 sq ft-in ÷ 27 × waste factor). At $165 per yard delivered, the concrete alone costs $825–$1,000.</p></details>
-    <details><summary>Is it cheaper to pour concrete yourself?</summary><p>DIY saves labor ($2.80–$4 per sq ft) but you still pay for concrete, forms, reinforcement and tool rentals. It only makes sense for small slabs — a botched pour costs more to remove than a pro charge.</p></details>
-    <details><summary>Does a 6-inch slab cost much more than 4 inches?</summary><p>Yes — roughly 50% more concrete by volume, plus rebar is standard at 6 inches. Expect $1.50–$2.50 more per square foot.</p></details>
-    <details><summary>How long does a concrete slab last?</summary><p>A properly poured and cured slab lasts 50+ years. Control joints, good base compaction and reinforcement matter more than the brand of cement.</p></details>
-  </div>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-line bg-white p-5">
+        <h3 class="text-[13px] tracking-[0.1em] font-semibold uppercase">What is included</h3>
+        <ul class="mt-3 space-y-2 text-[14px] leading-relaxed"><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Ready-mix concrete delivered</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Reinforcement (wire mesh or rebar)</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Vapor barrier</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Perimeter forms and stakes</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Finishing labor (broom, trowel or aggregate)</span></li><li class="flex gap-2"><span class="text-emerald-600 mt-0.5">✓</span><span>Basic hand tools and supplies</span></li></ul>
+      </div>
+      <div class="rounded-2xl border border-line bg-white p-5">
+        <h3 class="text-[13px] tracking-[0.1em] font-semibold uppercase">Not included</h3>
+        <ul class="mt-3 space-y-2 text-[14px] leading-relaxed text-muted"><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Permits and inspections</span></li><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Excavation, grading and fill dirt</span></li><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Concrete pumping for hard-to-reach pours</span></li><li class="flex gap-2"><span class="text-zinc-400 mt-0.5">×</span><span>Frost footings or thickened edges</span></li></ul>
+      </div>
+    </div>
 
-  <h2>Related calculators</h2>
-  <div class="related-grid">
-    <a class="related-card" href="/gravel-driveway-cost/">Gravel Driveway Cost</a>
-    <a class="related-card" href="/deck-cost/">Deck Cost</a>
-    <a class="related-card" href="/fence-cost/">Fence Cost</a>
-  </div>
-</section>
+    <div class="mt-8 rounded-2xl border border-line bg-bg p-6">
+      <h3 class="text-[14px] font-bold">How we calculate</h3>
+      <p class="mt-2 text-[14px] leading-relaxed text-muted">We estimate from national average 2026 prices: ready-mix concrete at roughly $165 per cubic yard delivered, wire mesh or rebar reinforcement, 6-mil vapor barrier, perimeter forms, and flatwork finishing labor at $2.80–$3.10+ per square foot depending on finish. A 12% waste factor is applied to concrete volume.</p>
+    </div>
+
+    <h2 class="mt-10 text-[18px] font-extrabold tracking-[-0.03em]">Concrete slab cost by size (4-inch, broom finish)</h2>
+    <div class="mt-3 overflow-hidden rounded-2xl border border-line bg-white">
+      <div class="overflow-x-auto">
+        <table class="w-full text-[13.5px]"><thead class="bg-bg text-left"><tr><th class="px-4 py-3 font-semibold whitespace-nowrap">Size</th><th class="px-4 py-3 font-semibold whitespace-nowrap">Typical installed cost</th></tr></thead><tbody class="divide-y divide-line"><tr class="hover:bg-bg/60"><td class="px-4 py-3">10 × 10 ft (100 sq ft)</td><td class="px-4 py-3">$550 – $950</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">12 × 20 ft (240 sq ft)</td><td class="px-4 py-3">$1,200 – $2,000</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">20 × 20 ft (400 sq ft)</td><td class="px-4 py-3">$1,900 – $3,100</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">24 × 24 ft (576 sq ft)</td><td class="px-4 py-3">$2,700 – $4,400</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">30 × 30 ft (900 sq ft)</td><td class="px-4 py-3">$4,000 – $6,600</td></tr><tr class="hover:bg-bg/60"><td class="px-4 py-3">40 × 60 ft (2,400 sq ft)</td><td class="px-4 py-3">$10,000 – $16,500</td></tr></tbody></table>
+      </div>
+    </div>
+
+    <div class="mt-8 rounded-[16px] border border-dashed border-line bg-white p-3 flex items-center justify-center min-h-[90px]">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7025216840306629" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2 class="mt-10 text-[18px] font-extrabold tracking-[-0.03em]">Recommended tools & supplies</h2>
+    <p class="mt-2 text-[14px] text-muted">If you are doing this yourself, these are the basics most DIYers end up buying:</p>
+    <div class="mt-4 grid gap-3">
+      <a href="https://www.amazon.com/s?k=concrete%20and%20fencing%20tools&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank" class="flex items-center justify-between p-4 rounded-2xl border border-line bg-white hover:border-ink/15 hover:shadow-[0_6px_16px_rgba(20,26,38,0.06)] transition"><span class="text-[14px] font-medium">Basic hand & power tools on Amazon</span><span class="text-accent font-semibold">→</span></a>
+      <a href="https://www.amazon.com/s?k=Concrete%20Slab%20materials&tag=costcruncher-20" rel="nofollow sponsored noopener" target="_blank" class="flex items-center justify-between p-4 rounded-2xl border border-line bg-white hover:border-ink/15 hover:shadow-[0_6px_16px_rgba(20,26,38,0.06)] transition"><span class="text-[14px] font-medium">Materials for this project on Amazon</span><span class="text-accent font-semibold">→</span></a>
+    </div>
+    <p class="mt-3 text-[11px] text-muted">CostCruncher is reader-supported. If you buy through links we may earn a commission at no cost to you.</p>
+
+    <h2 class="mt-10 text-[18px] font-extrabold tracking-[-0.03em]">Questions people ask</h2>
+    <div class="mt-3 space-y-2">
+      <details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">How much is a concrete slab per square foot?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">A plain 4-inch slab runs $4.50–$7.00 per square foot installed. Thicker slabs, reinforcement, decorative finishes and difficult access push it to $8–$12 per square foot.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">How much concrete do I need for a 20×20 slab?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">A 20×20 slab at 4 inches thick needs about 5 cubic yards of concrete (roughly 6,800 sq ft-in ÷ 27 × waste factor). At $165 per yard delivered, the concrete alone costs $825–$1,000.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">Is it cheaper to pour concrete yourself?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">DIY saves labor ($2.80–$4 per sq ft) but you still pay for concrete, forms, reinforcement and tool rentals. It only makes sense for small slabs — a botched pour costs more to remove than a pro charge.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">Does a 6-inch slab cost much more than 4 inches?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">Yes — roughly 50% more concrete by volume, plus rebar is standard at 6 inches. Expect $1.50–$2.50 more per square foot.</p></details><details class="group rounded-2xl border border-line bg-white p-4 open:border-accent/30 open:shadow-[0_4px_12px_rgba(20,26,38,0.06)] transition"><summary class="flex items-center justify-between cursor-pointer font-semibold text-[14px] list-none">How long does a concrete slab last?<span class="ml-3 w-7 h-7 rounded-full border border-line grid place-items-center text-accent group-open:rotate-45 transition">＋</span></summary><p class="mt-3 text-[14px] leading-relaxed text-muted">A properly poured and cured slab lasts 50+ years. Control joints, good base compaction and reinforcement matter more than the brand of cement.</p></details>
+    </div>
+
+    <h2 class="mt-10 text-[16px] font-extrabold tracking-tight">Related calculators</h2>
+    <div class="mt-3 flex flex-wrap gap-2">
+      <a href="/gravel-driveway-cost/" class="px-4 py-2 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20 hover:shadow-sm transition">Gravel Driveway</a><a href="/deck-cost/" class="px-4 py-2 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20 hover:shadow-sm transition">Deck</a><a href="/fence-cost/" class="px-4 py-2 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20 hover:shadow-sm transition">Fence</a>
+    </div>
+  </section>
 </div>
 </main>
-<footer class="site-footer">
-  <div class="foot-grid">
-    <div>
-      <a class="brand" href="/">Cost<span>Cruncher</span></a>
-      <p>Free 2026 cost calculators for home improvement projects. Independent estimates — we sell nothing, we quote nobody.</p>
+<footer class="mt-14 bg-ink text-white">
+  <div class="max-w-site mx-auto px-5 md:px-8 py-10">
+    <div class="grid md:grid-cols-[1.6fr_0.8fr_0.8fr] gap-8">
+      <div>
+        <div class="flex items-center gap-3"><span class="w-8 h-8 rounded-lg bg-white text-ink grid place-items-center font-extrabold text-[13px]">CC</span><span class="font-extrabold tracking-tight">CostCruncher</span><span class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Free 2026 calculators</span></div>
+        <p class="mt-3 text-[13px] leading-relaxed text-white/60 max-w-[44ch]">Free 2026 cost calculators for home improvement projects. Independent estimates — we sell nothing, we quote nobody.</p>
+      </div>
+      <div><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Popular</div><div class="mt-3 grid gap-1.5 text-[13px]"><a href="/concrete-slab-cost/" class="text-white/80 hover:text-white">Concrete slab</a><a href="/fence-cost/" class="text-white/80 hover:text-white">Fence</a><a href="/deck-cost/" class="text-white/80 hover:text-white">Deck</a><a href="/moving-cost/" class="text-white/80 hover:text-white">Moving</a></div></div>
+      <div><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Site</div><div class="mt-3 grid gap-1.5 text-[13px]"><a href="/about/" class="text-white/80 hover:text-white">About</a><a href="/privacy/" class="text-white/80 hover:text-white">Privacy</a><a href="/disclaimer/" class="text-white/80 hover:text-white">Disclaimer</a><a href="/sitemap.xml" class="text-white/80 hover:text-white">Sitemap</a></div></div>
     </div>
-    <div>
-      <strong>Popular</strong>
-      <a href="/concrete-slab-cost/">Concrete slab</a>
-      <a href="/fence-cost/">Fence</a>
-      <a href="/deck-cost/">Deck</a>
-      <a href="/moving-cost/">Moving</a>
-    </div>
-    <div>
-      <strong>Site</strong>
-      <a href="/about/">About</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/disclaimer/">Disclaimer</a>
-      <a href="/sitemap.xml">Sitemap</a>
-    </div>
+    <div class="mt-8 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-3 justify-between text-[12px] text-white/50"><span>© 2026 CostCruncher · Estimates only — get 3 quotes before hiring.</span><span>As an Amazon Associate we earn from qualifying purchases.</span></div>
   </div>
-  <p class="legal">© 2026 CostCruncher · Estimates only — get 3 quotes before hiring. As an Amazon Associate we earn from qualifying purchases.</p>
 </footer>
+<script>document.getElementById('mobileMenuBtn')?.addEventListener('click',()=>document.getElementById('mobileNav')?.classList.toggle('hidden'));</script>
 </body>
 </html>
 <script>window.CC_DATA = {"slug":"concrete-slab-cost","title":"Concrete Slab Cost Calculator","inputs":[{"type":"number","id":"length","label":"Length","unit":"ft","def":20,"min":1,"max":300,"step":1},{"type":"number","id":"width","label":"Width","unit":"ft","def":20,"min":1,"max":300,"step":1},{"type":"select","id":"thickness","label":"Thickness","def":"4","options":[{"v":"4","l":"4 inches — patio, walkway"},{"v":"5","l":"5 inches — light driveway"},{"v":"6","l":"6 inches — driveway, heavy load"}]},{"type":"select","id":"finish","label":"Finish","def":"broom","options":[{"v":"broom","l":"Broom finish (standard)"},{"v":"trowel","l":"Smooth trowel"},{"v":"aggregate","l":"Exposed aggregate"}]},{"type":"checkbox","id":"reinforced","label":"Include reinforcement (mesh or rebar)","def":true}],"method":"We estimate from national average 2026 prices: ready-mix concrete at roughly $165 per cubic yard delivered, wire mesh or rebar reinforcement, 6-mil vapor barrier, perimeter forms, and flatwork finishing labor at $2.80–$3.10+ per square foot depending on finish. A 12% waste factor is applied to concrete volume.","logic":"function (v) {\n    var L = v.length, W = v.width, t = parseFloat(v.thickness);\n    var area = L * W;\n    var volYd = area * (t / 12) / 27 * 1.12;\n    var items = [];\n    items.push({ label: 'Ready-mix concrete delivered', detail: Math.max(1, Math.round(volYd * 10) / 10) + ' yd³ @ $165/yd', amount: volYd * 165 });\n    if (v.reinforced) {\n      if (t >= 6) { items.push({ label: 'Rebar reinforcement (#3 grid)', detail: area + ' sq ft @ $0.55', amount: area * 0.55 }); }\n      else { items.push({ label: 'Wire mesh reinforcement', detail: area + ' sq ft @ $0.35', amount: area * 0.35 }); }\n    }\n    items.push({ label: 'Vapor barrier (6-mil poly)', detail: area + ' sq ft @ $0.15', amount: area * 0.15 });\n    items.push({ label: 'Forms and stakes', detail: Math.round(2 * (L + W)) + ' linear ft @ $2.20', amount: 2 * (L + W) * 2.2 });\n    var finishRate = v.finish === 'trowel' ? 3.1 : v.finish === 'aggregate' ? 3.9 : 2.8;\n    items.push({ label: 'Finishing labor', detail: area + ' sq ft @ $' + finishRate.toFixed(2), amount: area * finishRate });\n    items.push({ label: 'Tools and supplies', amount: 75 });\n    var total = 0; items.forEach(function (i) { total += i.amount; });\n    return { items: items, total: total, low: total * 0.85, high: total * 1.3, per: { label: 'per square foot', value: total / Math.max(area, 1) }, note: 'Estimate excludes permits, excavation/grading and concrete pumping. Get at least 3 quotes — slab pricing varies 30%+ by region.' };\n  }"};</script>

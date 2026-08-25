@@ -5,155 +5,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CostCruncher — Know the price before the first quote (2026)</title>
 <meta name="description" content="72 free home improvement cost calculators. Line-item breakdowns, materials plus labor, updated for 2026. Independent — we sell nothing, we quote nobody.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23E35B24'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='800' font-size='14' fill='white' text-anchor='middle'%3ECC%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://hamzaderkaoui1204-ship-it.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CostCruncher — Know the price before the first quote (2026)">
+<meta property="og:description" content="72 free home improvement cost calculators. Line-item breakdowns, materials plus labor, updated for 2026. Independent — we sell nothing, we quote nobody.">
+<meta property="og:url" content="https://hamzaderkaoui1204-ship-it.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%228%22%20fill%3D%22%23E35B24%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2221%22%20font-family%3D%22Arial%22%20font-weight%3D%22800%22%20font-size%3D%2214%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%3ECC%3C%2Ftext%3E%3C%2Fsvg%3E">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: { sans: ['Geist','system-ui','sans-serif'], mono: ['JetBrains Mono','monospace'] },
-      colors: {
-        ink: '#141A26',
-        muted: '#6B7280',
-        line: '#E7E5E0',
-        paper: '#FFFFFF',
-        bg: '#F9F8F6',
-        accent: '#E35B24',
-        accentDark: '#C94E1B',
-      },
-      maxWidth: { 'site': '1280px' }
-    }
-  }
-}
+tailwind.config={theme:{extend:{fontFamily:{sans:['Geist','system-ui','sans-serif'],mono:['JetBrains Mono','monospace']},colors:{ink:'#141A26',muted:'#6B7280',line:'#E7E5E0',paper:'#FFFFFF',bg:'#F9F8F6',accent:'#E35B24',accentDark:'#C94E1B'},maxWidth:{site:'1280px'}}}}
 </script>
-<style>
-  * { font-variant-ligatures: common-ligatures; }
-  html { scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
-  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1); }
-  .reveal.in { opacity: 1; transform: translateY(0); }
-  /* custom scrollbar for filter pills */
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-</style>
+<style>*{font-variant-ligatures:common-ligatures}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}.reveal.in{opacity:1;transform:translateY(0)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7025216840306629" crossorigin="anonymous"></script>
+<meta name="google-site-verification" content="PENDING_GSC_TOKEN">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 </head>
 <body class="bg-bg text-ink font-sans antialiased overflow-x-hidden">
-<!-- Design Read: content directory / calculator hub for homeowners planning renovations, with a premium utility / editorial language, leaning toward Tailwind utilities + Geist + restrained motion. Dials: VARIANCE 7 / MOTION 5 / DENSITY 4 -->
-
-<!-- NAV: single line, 64px -->
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-accent text-white px-3 py-2 rounded-full" href="#main">Skip to content</a>
 <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-xl border-b border-line">
   <div class="max-w-site mx-auto px-5 md:px-8 h-[64px] flex items-center justify-between gap-6">
-    <a href="#" class="flex items-center gap-3 shrink-0">
+    <a href="/" class="flex items-center gap-3 shrink-0">
       <span class="w-8 h-8 rounded-lg bg-ink text-white grid place-items-center font-extrabold text-[13px] tracking-tight">CC</span>
       <span class="font-extrabold tracking-[-0.03em] text-[17px]">Cost<span class="text-accent">Cruncher</span></span>
       <span class="hidden sm:inline text-[10px] leading-none tracking-[0.14em] font-semibold text-muted border border-line rounded-full px-2 py-1">2026 EDITION</span>
     </a>
-    <nav class="hidden lg:flex items-center gap-1 text-[13.5px] font-medium text-muted">
-      <a href="#exterior" class="px-3 py-1.5 rounded-full hover:bg-zinc-100 hover:text-ink transition">Exterior & Yard</a>
-      <a href="#interior" class="px-3 py-1.5 rounded-full hover:bg-zinc-100 hover:text-ink transition">Interior</a>
-      <a href="#systems" class="px-3 py-1.5 rounded-full hover:bg-zinc-100 hover:text-ink transition">Systems</a>
-      <a href="#how" class="px-3 py-1.5 rounded-full hover:bg-zinc-100 hover:text-ink transition">How it works</a>
-    </nav>
+    <nav class="hidden lg:flex items-center gap-1 text-[13.5px] font-medium text-muted" aria-label="Categories"><a href="/#exterior---yard">Exterior & Yard</a>
+  <a href="/#interior">Interior</a>
+  <a href="/#systems---energy">Systems & Energy</a>
+  <a href="/about/">About</a></nav>
     <div class="flex items-center gap-2">
-      <div class="hidden md:flex items-center gap-2 text-[11px] font-medium text-muted mr-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Updated quarterly
-      </div>
-      <a href="#all" class="hidden sm:inline-flex items-center justify-center h-9 px-5 rounded-full bg-ink text-white text-[13px] font-semibold hover:bg-zinc-900 transition -translate-y-px active:translate-y-0 active:scale-[0.98]">Explore calculators</a>
-      <button id="mobileMenuBtn" class="lg:hidden w-9 h-9 grid place-items-center rounded-full border border-line bg-white"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="hidden md:flex items-center gap-2 text-[11px] font-medium text-muted mr-2"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Updated quarterly</div>
+      <a href="/#all" class="hidden sm:inline-flex items-center justify-center h-9 px-5 rounded-full bg-ink text-white text-[13px] font-semibold hover:bg-zinc-900 transition">Explore calculators</a>
+      <button id="mobileMenuBtn" class="lg:hidden w-9 h-9 grid place-items-center rounded-full border border-line bg-white" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
   <div id="mobileNav" class="hidden lg:hidden border-t border-line bg-white px-5 py-4">
-    <div class="flex flex-col gap-2 text-[14px] font-medium">
-      <a href="#exterior" class="py-2">Exterior & Yard</a>
-      <a href="#interior" class="py-2">Interior</a>
-      <a href="#systems" class="py-2">Systems & Energy</a>
-      <a href="#how" class="py-2">How it works</a>
-      <a href="#all" class="mt-2 inline-flex justify-center h-10 items-center rounded-full bg-ink text-white font-semibold">Explore calculators</a>
-    </div>
+    <div class="flex flex-col gap-2 text-[14px] font-medium"><a class="py-2" href="/#exterior---yard">Exterior & Yard</a>
+  <a class="py-2" href="/#interior">Interior</a>
+  <a class="py-2" href="/#systems---energy">Systems & Energy</a>
+  <a class="py-2" href="/about/">About</a></div>
   </div>
 </header>
-
-<!-- HERO: split screen, fits initial viewport, max 4 text elements -->
-<section class="max-w-site mx-auto px-5 md:px-8 pt-12 md:pt-16 lg:pt-16 pb-8">
+<!-- Hero -->
+<section class="max-w-site mx-auto px-5 md:px-8 pt-12 md:pt-16 pb-8">
   <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-10 items-start">
-    <!-- left copy -->
     <div class="pt-2">
-      <div class="inline-flex items-center gap-2 text-[11px] tracking-[0.14em] font-semibold uppercase text-muted mb-5">
-        <span class="w-6 h-px bg-accent"></span> 72 calculators • No lead forms • Line-item math
-      </div>
-      <h1 class="text-[38px] md:text-[52px] lg:text-[56px] font-extrabold tracking-[-0.04em] leading-[0.95] max-w-[14ch]">
-        Know the price
-        <span class="text-accent">before</span> the first quote.
-      </h1>
-      <p class="mt-4 text-[17px] leading-relaxed text-muted max-w-[46ch]">
-        Independent calculators with materials plus labor broken out. Updated for 2026 prices — no sales calls.
-      </p>
+      <div class="inline-flex items-center gap-2 text-[11px] tracking-[0.14em] font-semibold uppercase text-muted mb-5"><span class="w-6 h-px bg-accent"></span> 72 calculators • No lead forms • Line-item math</div>
+      <h1 class="text-[38px] md:text-[52px] lg:text-[56px] font-extrabold tracking-[-0.04em] leading-[0.95] max-w-[14ch]">Know the price <span class="text-accent">before</span> the first quote.</h1>
+      <p class="mt-4 text-[17px] leading-relaxed text-muted max-w-[46ch]">Independent calculators with materials plus labor broken out. Updated for 2026 prices — no sales calls.</p>
       <div class="mt-7 flex flex-wrap gap-3">
-        <a href="#all" class="inline-flex items-center justify-center h-[44px] px-7 rounded-full bg-accent text-white font-semibold text-[14px] hover:bg-accentDark transition active:scale-[0.98] shadow-[0_8px_20px_rgba(227,91,36,0.25)]">Explore calculators</a>
+        <a href="#all" class="inline-flex items-center justify-center h-[44px] px-7 rounded-full bg-accent text-white font-semibold text-[14px] hover:bg-accentDark transition shadow-[0_8px_20px_rgba(227,91,36,0.25)]">Explore calculators</a>
         <a href="#how" class="inline-flex items-center justify-center h-[44px] px-6 rounded-full bg-white border border-line font-medium text-[14px] hover:border-ink/20 transition">How it works</a>
       </div>
-      <!-- micro proof inside hero limited to 1 line of helpers (not eyebrow) -->
-      <div class="mt-6 flex flex-wrap gap-5 text-[12.5px] text-muted font-medium">
-        <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Free forever</span>
-        <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-ink"></span> Runs in your browser</span>
-        <span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> 2026 pricing</span>
-      </div>
+      <div class="mt-6 flex flex-wrap gap-5 text-[12.5px] text-muted font-medium"><span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Free forever</span><span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-ink"></span> Runs in your browser</span><span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> 2026 pricing</span></div>
     </div>
-    <!-- right visual: editorial image + floating breakdown card -->
     <div class="relative lg:sticky lg:top-[84px]">
       <div class="rounded-[24px] overflow-hidden border border-line bg-white shadow-[0_20px_60px_rgba(20,26,38,0.08)]">
         <div class="aspect-[4/3] relative overflow-hidden bg-zinc-100">
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&h=680&fit=crop" alt="Modern home exterior and interior renovation" class="w-full h-full object-cover" loading="eager">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent"></div>
           <div class="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between gap-4">
-            <div class="bg-white/95 backdrop-blur rounded-2xl px-4 py-3 border border-white/60 shadow-lg">
-              <div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-muted">Example estimate</div>
-              <div class="text-[18px] font-extrabold tracking-tight">Concrete slab 12×16 ft</div>
-              <div class="text-[12px] text-muted">Materials $1,840 • Labor $2,150 • Total <span class="font-mono font-semibold text-ink">$3,990</span></div>
-            </div>
-            <div class="hidden sm:grid place-items-center w-12 h-12 rounded-full bg-white text-ink shadow-lg">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
-            </div>
+            <div class="bg-white/95 backdrop-blur rounded-2xl px-4 py-3 border border-white/60 shadow-lg"><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-muted">Example estimate</div><div class="text-[18px] font-extrabold tracking-tight">Concrete slab 12×16 ft</div><div class="text-[12px] text-muted">Materials $1,840 • Labor $2,150 • Total <span class="font-mono font-semibold text-ink">$3,990</span></div></div>
+            <div class="hidden sm:grid place-items-center w-12 h-12 rounded-full bg-white text-ink shadow-lg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></div>
           </div>
         </div>
-        <!-- bottom bar -->
-        <div class="grid grid-cols-3 divide-x divide-line text-center py-4">
-          <div><div class="font-mono font-semibold text-[18px] tracking-tight">72</div><div class="text-[11px] tracking-[0.08em] uppercase font-semibold text-muted">Calculators</div></div>
-          <div><div class="font-mono font-semibold text-[18px] tracking-tight">3</div><div class="text-[11px] tracking-[0.08em] uppercase font-semibold text-muted">Categories</div></div>
-          <div><div class="font-mono font-semibold text-[18px] tracking-tight">2026</div><div class="text-[11px] tracking-[0.08em] uppercase font-semibold text-muted">Prices</div></div>
-        </div>
+        <div class="grid grid-cols-3 divide-x divide-line text-center py-4"><div><div class="font-mono font-semibold text-[18px] tracking-tight">72</div><div class="text-[11px] tracking-[0.08em] uppercase font-semibold text-muted">Calculators</div></div><div><div class="font-mono font-semibold text-[18px] tracking-tight">3</div><div class="text-[11px] tracking-[0.08em] uppercase font-semibold text-muted">Categories</div></div><div><div class="font-mono font-semibold text-[18px] tracking-tight">2026</div><div class="text-[11px] tracking-[0.08em] uppercase font-semibold text-muted">Prices</div></div></div>
       </div>
-      <!-- decorative accent -->
       <div class="absolute -z-10 -right-6 -bottom-6 w-[60%] h-[40%] bg-accent/10 blur-[40px] rounded-full pointer-events-none"></div>
     </div>
   </div>
 </section>
-
-<!-- LOGO/PROOF WALL: separate section below hero (not inside hero) -->
-<section class="border-y border-line bg-white">
-  <div class="max-w-site mx-auto px-5 md:px-8 h-[52px] flex items-center justify-between gap-6 overflow-hidden">
-    <div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-muted shrink-0 hidden sm:block">Trusted for independent math</div>
-    <div class="flex items-center gap-6 md:gap-8 text-[12px] font-medium text-muted/80 overflow-x-auto no-scrollbar">
-      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accent"></span> No contractor paywall</span>
-      <span class="hidden md:inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> No email required</span>
-      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-ink"></span> Line-item breakdown</span>
-      <span class="hidden sm:inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-zinc-400"></span> Formula shown</span>
-      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-500"></span> Get 3 quotes</span>
-    </div>
-    <div class="hidden lg:flex items-center gap-1 text-[11px] font-semibold text-muted shrink-0"><span class="w-6 h-px bg-line"></span> As seen in DIY communities</div>
-  </div>
-</section>
-
-<!-- SEARCH + FILTER BAR -->
+<section class="border-y border-line bg-white"><div class="max-w-site mx-auto px-5 md:px-8 h-[52px] flex items-center justify-between gap-6 overflow-hidden"><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-muted shrink-0 hidden sm:block">Trusted for independent math</div><div class="flex items-center gap-6 md:gap-8 text-[12px] font-medium text-muted/80 overflow-x-auto no-scrollbar"><span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accent"></span> No contractor paywall</span><span class="hidden md:inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> No email required</span><span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-ink"></span> Line-item breakdown</span><span class="hidden sm:inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-zinc-400"></span> Formula shown</span><span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-500"></span> Get 3 quotes</span></div><div class="hidden lg:flex items-center gap-1 text-[11px] font-semibold text-muted shrink-0"><span class="w-6 h-px bg-line"></span> As seen in DIY communities</div></div></section>
 <section id="all" class="max-w-site mx-auto px-5 md:px-8 pt-10">
   <div class="flex flex-col lg:flex-row gap-4 lg:items-center justify-between">
-    <div class="flex-1 max-w-[640px] relative">
-      <input id="search" type="search" placeholder="Search calculators — try “deck”, “paint”, “roof”…" class="w-full h-[48px] pl-11 pr-4 rounded-full border border-line bg-white text-[14px] placeholder:text-muted focus:outline-none focus:border-ink/20 focus:ring-4 focus:ring-ink/[0.04] transition">
-      <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <span id="resultCount" class="absolute right-3 top-1/2 -translate-y-1/2 text-[11px] font-mono font-medium bg-bg border border-line rounded-full px-2.5 py-1 hidden"></span>
-    </div>
+    <div class="flex-1 max-w-[640px] relative"><input id="search" type="search" placeholder="Search calculators — try “deck”, “paint”, “roof”…" class="w-full h-[48px] pl-11 pr-4 rounded-full border border-line bg-white text-[14px] placeholder:text-muted focus:outline-none focus:border-ink/20 focus:ring-4 focus:ring-ink/[0.04] transition"><svg class="absolute left-4 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span id="resultCount" class="absolute right-3 top-1/2 -translate-y-1/2 text-[11px] font-mono font-medium bg-bg border border-line rounded-full px-2.5 py-1 hidden"></span></div>
     <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
       <button data-filter="all" class="filter-btn active whitespace-nowrap h-8 px-4 rounded-full bg-ink text-white text-[13px] font-semibold">All 72</button>
       <button data-filter="Exterior & Yard" class="filter-btn whitespace-nowrap h-8 px-4 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20">Exterior & Yard</button>
@@ -162,398 +90,48 @@ tailwind.config = {
     </div>
   </div>
 </section>
-
-<!-- FEATURED BENTO: 3 hero calculators with rhythm (not 3 equal cards) -->
 <section class="max-w-site mx-auto px-5 md:px-8 pt-6">
   <div class="grid md:grid-cols-12 gap-4">
-    <!-- large feature left -->
-    <a href="https://hamzaderkaoui1204-ship-it.github.io/concrete-slab-cost/" class="md:col-span-7 group relative rounded-[20px] overflow-hidden border border-line bg-white p-6 md:p-7 flex flex-col min-h-[280px]">
+    <a href="/concrete-slab-cost/" class="md:col-span-7 group relative rounded-[20px] overflow-hidden border border-line bg-white p-6 md:p-7 flex flex-col min-h-[280px]">
       <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(#141A26 1px, transparent 1px); background-size: 16px 16px"></div>
-      <div class="relative flex-1">
-        <div class="inline-flex items-center gap-2 text-[11px] tracking-[0.12em] font-semibold uppercase"><span class="w-2 h-2 rounded-full bg-accent"></span> Most calculated</div>
-        <h3 class="mt-3 text-[28px] font-extrabold tracking-[-0.03em] leading-none">Concrete slab</h3>
-        <p class="mt-2 text-[14px] leading-relaxed text-muted max-w-[36ch]">Price by dimensions, thickness and finish with materials and labor broken out.</p>
-        <div class="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold">Calculate <span class="w-7 h-7 rounded-full bg-ink text-white grid place-items-center group-hover:translate-x-0.5 transition">→</span></div>
-      </div>
+      <div class="relative flex-1"><div class="inline-flex items-center gap-2 text-[11px] tracking-[0.12em] font-semibold uppercase"><span class="w-2 h-2 rounded-full bg-accent"></span> Most calculated</div><h3 class="mt-3 text-[28px] font-extrabold tracking-[-0.03em] leading-none">Concrete slab</h3><p class="mt-2 text-[14px] leading-relaxed text-muted max-w-[36ch]">Price by dimensions, thickness and finish with materials and labor broken out.</p><div class="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold">Calculate <span class="w-7 h-7 rounded-full bg-ink text-white grid place-items-center group-hover:translate-x-0.5 transition">→</span></div></div>
       <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=340&fit=crop" alt="Freshly poured concrete slab foundation" class="mt-6 rounded-2xl w-full h-[160px] object-cover border border-line" loading="lazy">
     </a>
-    <!-- stacked two on right with varied backgrounds -->
     <div class="md:col-span-5 grid gap-4">
-      <a href="https://hamzaderkaoui1204-ship-it.github.io/deck-cost/" class="group relative rounded-[20px] overflow-hidden border border-line bg-zinc-900 text-white p-6 flex gap-4 items-center min-h-[140px]">
-        <img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=200&h=140&fit=crop" alt="Wooden deck with outdoor furniture" class="w-[112px] h-[96px] rounded-xl object-cover shrink-0" loading="lazy">
-        <div>
-          <div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Wood vs composite</div>
-          <h3 class="text-[18px] font-bold tracking-tight leading-tight">Deck cost</h3>
-          <p class="text-[13px] leading-snug text-white/70 mt-1">Framing, railing and stairs itemized.</p>
-          <div class="mt-2 text-[13px] font-semibold inline-flex items-center gap-1.5">Calculate <span class="group-hover:translate-x-0.5 transition">→</span></div>
-        </div>
-      </a>
-      <a href="https://hamzaderkaoui1204-ship-it.github.io/fence-cost/" class="group rounded-[20px] border border-line bg-[#FFF1E8] p-6 flex gap-4 items-center min-h-[140px]">
-        <div class="flex-1">
-          <h3 class="text-[18px] font-bold tracking-tight">Fence cost</h3>
-          <p class="text-[13px] leading-snug text-muted mt-1">Wood, vinyl, chain link or aluminum by length.</p>
-          <div class="mt-2 text-[13px] font-semibold inline-flex items-center gap-1.5">Calculate <span class="group-hover:translate-x-0.5 transition">→</span></div>
-        </div>
-        <img src="https://images.unsplash.com/photo-1628713061796-6d36105fb6ba?w=200&h=140&fit=crop" alt="Modern wood fence along property line" class="w-[112px] h-[96px] rounded-xl object-cover shrink-0 border border-line" loading="lazy">
-      </a>
+      <a href="/deck-cost/" class="group relative rounded-[20px] overflow-hidden border border-line bg-zinc-900 text-white p-6 flex gap-4 items-center min-h-[140px]"><img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=200&h=140&fit=crop" alt="Wooden deck with outdoor furniture" class="w-[112px] h-[96px] rounded-xl object-cover shrink-0" loading="lazy"><div><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Wood vs composite</div><h3 class="text-[18px] font-bold tracking-tight leading-tight">Deck cost</h3><p class="text-[13px] leading-snug text-white/70 mt-1">Framing, railing and stairs itemized.</p><div class="mt-2 text-[13px] font-semibold inline-flex items-center gap-1.5">Calculate <span class="group-hover:translate-x-0.5 transition">→</span></div></div></a>
+      <a href="/fence-cost/" class="group rounded-[20px] border border-line bg-[#FFF1E8] p-6 flex gap-4 items-center min-h-[140px]"><div class="flex-1"><h3 class="text-[18px] font-bold tracking-tight">Fence cost</h3><p class="text-[13px] leading-snug text-muted mt-1">Wood, vinyl, chain link or aluminum by length.</p><div class="mt-2 text-[13px] font-semibold inline-flex items-center gap-1.5">Calculate <span class="group-hover:translate-x-0.5 transition">→</span></div></div><img src="https://images.unsplash.com/photo-1628713061796-6d36105fb6ba?w=200&h=140&fit=crop" alt="Modern wood fence along property line" class="w-[112px] h-[96px] rounded-xl object-cover shrink-0 border border-line" loading="lazy"></a>
     </div>
   </div>
 </section>
-
-<!-- CATEGORY: EXTERIOR & YARD - bento with image diversity, not uniform cards -->
-<section id="exterior" class="max-w-site mx-auto px-5 md:px-8 pt-14">
-  <div class="flex items-end justify-between gap-6">
-    <div>
-      <h2 class="text-[22px] md:text-[26px] font-extrabold tracking-[-0.03em]">Exterior & Yard</h2>
-      <p class="text-[13px] text-muted mt-1">41 calculators • roofs, driveways, yards and structures</p>
-    </div>
-    <a href="#" class="hidden md:inline-flex text-[13px] font-semibold underline decoration-line underline-offset-4 hover:decoration-ink/30">View pricing methodology →</a>
-  </div>
-  <div id="grid-exterior" class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
-  <button id="toggleExterior" class="mt-4 mx-auto flex h-9 px-5 rounded-full border border-line bg-white text-[13px] font-semibold hover:border-ink/20">Show all 41</button>
-</section>
-
-<!-- CATEGORY: INTERIOR - different family: editorial list + grid hybrid -->
-<section id="interior" class="max-w-site mx-auto px-5 md:px-8 pt-14">
-  <div class="rounded-[24px] border border-line bg-white overflow-hidden">
-    <div class="grid lg:grid-cols-[1.1fr_1.9fr] gap-0">
-      <div class="p-7 md:p-8 bg-bg border-b lg:border-b-0 lg:border-r border-line">
-        <h2 class="text-[22px] font-extrabold tracking-[-0.03em]">Interior</h2>
-        <p class="text-[14px] leading-relaxed text-muted mt-2 max-w-[32ch]">24 calculators for everything inside the envelope — from paint and flooring to full remodels.</p>
-        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=420&fit=crop" alt="Bright modern interior living room renovation" class="mt-6 rounded-2xl w-full h-[220px] object-cover border border-line" loading="lazy">
-        <div class="mt-5 grid grid-cols-3 gap-3 text-center">
-          <div class="rounded-2xl bg-white border border-line py-3"><div class="font-mono font-semibold">24</div><div class="text-[10px] tracking-[0.1em] uppercase font-semibold text-muted">Tools</div></div>
-          <div class="rounded-2xl bg-white border border-line py-3"><div class="font-mono font-semibold">~2 min</div><div class="text-[10px] tracking-[0.1em] uppercase font-semibold text-muted">Avg time</div></div>
-          <div class="rounded-2xl bg-white border border-line py-3"><div class="font-mono font-semibold">Line-item</div><div class="text-[10px] tracking-[0.1em] uppercase font-semibold text-muted">Math shown</div></div>
-        </div>
-      </div>
-      <div class="p-4 md:p-6">
-        <div id="grid-interior" class="grid sm:grid-cols-2 gap-4"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CATEGORY: SYSTEMS - third family: compact horizontal rows -->
-<section id="systems" class="max-w-site mx-auto px-5 md:px-8 pt-14">
-  <h2 class="text-[22px] md:text-[26px] font-extrabold tracking-[-0.03em]">Systems & Energy</h2>
-  <p class="text-[13px] text-muted mt-1">7 calculators • HVAC, solar, insulation and remediation</p>
-  <div id="grid-systems" class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-3"></div>
-</section>
-
-<!-- HOW IT WORKS: different family again (numbered steps) -->
-<section id="how" class="max-w-site mx-auto px-5 md:px-8 pt-16">
-  <div class="rounded-[24px] bg-ink text-white overflow-hidden">
-    <div class="grid lg:grid-cols-3 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
-      <div class="p-7 md:p-8">
-        <div class="w-8 h-8 rounded-full bg-white text-ink grid place-items-center font-mono font-bold text-[13px]">01</div>
-        <h3 class="mt-4 text-[18px] font-bold tracking-tight">Enter your details</h3>
-        <p class="mt-2 text-[14px] leading-relaxed text-white/70">Dimensions, materials and options. Calculators use trade-standard formulas and 2026 pricing.</p>
-      </div>
-      <div class="p-7 md:p-8">
-        <div class="w-8 h-8 rounded-full bg-white text-ink grid place-items-center font-mono font-bold text-[13px]">02</div>
-        <h3 class="mt-4 text-[18px] font-bold tracking-tight">See the line items</h3>
-        <p class="mt-2 text-[14px] leading-relaxed text-white/70">Every total is broken into materials, labor, delivery and extras — with the math shown.</p>
-      </div>
-      <div class="p-7 md:p-8">
-        <div class="w-8 h-8 rounded-full bg-accent text-white grid place-items-center font-mono font-bold text-[13px]">03</div>
-        <h3 class="mt-4 text-[18px] font-bold tracking-tight">Compare quotes</h3>
-        <p class="mt-2 text-[14px] leading-relaxed text-white/70">Use the range to sanity-check bids. If a quote is far outside, ask why.</p>
-      </div>
-    </div>
-    <div class="px-7 md:px-8 py-4 bg-white/[0.06] border-t border-white/10 flex flex-wrap gap-4 text-[12px] font-medium text-white/70">
-      <span>✓ No sign-up</span><span>✓ No paywall</span><span>✓ No selling your data</span><span class="ml-auto">Independent estimates — get 3 quotes before hiring.</span>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
+<section id="exterior" class="max-w-site mx-auto px-5 md:px-8 pt-14"><div class="flex items-end justify-between gap-6"><div><h2 class="text-[22px] md:text-[26px] font-extrabold tracking-[-0.03em]">Exterior & Yard</h2><p class="text-[13px] text-muted mt-1">41 calculators • roofs, driveways, yards and structures</p></div><a href="#" class="hidden md:inline-flex text-[13px] font-semibold underline decoration-line underline-offset-4 hover:decoration-ink/30">View pricing methodology →</a></div><div id="grid-exterior" class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div><button id="toggleExterior" class="mt-4 mx-auto flex h-9 px-5 rounded-full border border-line bg-white text-[13px] font-semibold hover:border-ink/20">Show all</button></section>
+<section id="interior" class="max-w-site mx-auto px-5 md:px-8 pt-14"><div class="rounded-[24px] border border-line bg-white overflow-hidden"><div class="grid lg:grid-cols-[1.1fr_1.9fr] gap-0"><div class="p-7 md:p-8 bg-bg border-b lg:border-b-0 lg:border-r border-line"><h2 class="text-[22px] font-extrabold tracking-[-0.03em]">Interior</h2><p class="text-[14px] leading-relaxed text-muted mt-2 max-w-[32ch]">24 calculators for everything inside the envelope — from paint and flooring to full remodels.</p><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=420&fit=crop" alt="Bright modern interior living room renovation" class="mt-6 rounded-2xl w-full h-[220px] object-cover border border-line" loading="lazy"><div class="mt-5 grid grid-cols-3 gap-3 text-center"><div class="rounded-2xl bg-white border border-line py-3"><div class="font-mono font-semibold">24</div><div class="text-[10px] tracking-[0.1em] uppercase font-semibold text-muted">Tools</div></div><div class="rounded-2xl bg-white border border-line py-3"><div class="font-mono font-semibold">~2 min</div><div class="text-[10px] tracking-[0.1em] uppercase font-semibold text-muted">Avg time</div></div><div class="rounded-2xl bg-white border border-line py-3"><div class="font-mono font-semibold">Line-item</div><div class="text-[10px] tracking-[0.1em] uppercase font-semibold text-muted">Math shown</div></div></div></div><div class="p-4 md:p-6"><div id="grid-interior" class="grid sm:grid-cols-2 gap-4"></div></div></div></div></section>
+<section id="systems" class="max-w-site mx-auto px-5 md:px-8 pt-14"><h2 class="text-[22px] md:text-[26px] font-extrabold tracking-[-0.03em]">Systems & Energy</h2><p class="text-[13px] text-muted mt-1">7 calculators • HVAC, solar, insulation and remediation</p><div id="grid-systems" class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-3"></div></section>
+<section id="how" class="max-w-site mx-auto px-5 md:px-8 pt-16"><div class="rounded-[24px] bg-ink text-white overflow-hidden"><div class="grid lg:grid-cols-3 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-white/10"><div class="p-7 md:p-8"><div class="w-8 h-8 rounded-full bg-white text-ink grid place-items-center font-mono font-bold text-[13px]">01</div><h3 class="mt-4 text-[18px] font-bold tracking-tight">Enter your details</h3><p class="mt-2 text-[14px] leading-relaxed text-white/70">Dimensions, materials and options. Calculators use trade-standard formulas and 2026 pricing.</p></div><div class="p-7 md:p-8"><div class="w-8 h-8 rounded-full bg-white text-ink grid place-items-center font-mono font-bold text-[13px]">02</div><h3 class="mt-4 text-[18px] font-bold tracking-tight">See the line items</h3><p class="mt-2 text-[14px] leading-relaxed text-white/70">Every total is broken into materials, labor, delivery and extras — with the math shown.</p></div><div class="p-7 md:p-8"><div class="w-8 h-8 rounded-full bg-accent text-white grid place-items-center font-mono font-bold text-[13px]">03</div><h3 class="mt-4 text-[18px] font-bold tracking-tight">Compare quotes</h3><p class="mt-2 text-[14px] leading-relaxed text-white/70">Use the range to sanity-check bids. If a quote is far outside, ask why.</p></div></div><div class="px-7 md:px-8 py-4 bg-white/[0.06] border-t border-white/10 flex flex-wrap gap-4 text-[12px] font-medium text-white/70"><span>✓ No sign-up</span><span>✓ No paywall</span><span>✓ No selling your data</span><span class="ml-auto">Independent estimates — get 3 quotes before hiring.</span></div></div></section>
 <footer class="mt-14 bg-ink text-white">
   <div class="max-w-site mx-auto px-5 md:px-8 py-10">
     <div class="grid md:grid-cols-[1.6fr_0.8fr_0.8fr] gap-8">
       <div>
-        <div class="flex items-center gap-3">
-          <span class="w-8 h-8 rounded-lg bg-white text-ink grid place-items-center font-extrabold text-[13px]">CC</span>
-          <span class="font-extrabold tracking-tight">CostCruncher</span>
-          <span class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Free 2026 calculators</span>
-        </div>
+        <div class="flex items-center gap-3"><span class="w-8 h-8 rounded-lg bg-white text-ink grid place-items-center font-extrabold text-[13px]">CC</span><span class="font-extrabold tracking-tight">CostCruncher</span><span class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Free 2026 calculators</span></div>
         <p class="mt-3 text-[13px] leading-relaxed text-white/60 max-w-[44ch]">Free 2026 cost calculators for home improvement projects. Independent estimates — we sell nothing, we quote nobody.</p>
       </div>
-      <div>
-        <div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Popular</div>
-        <div class="mt-3 grid gap-1.5 text-[13px]">
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/concrete-slab-cost/" class="text-white/80 hover:text-white">Concrete slab</a>
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/fence-cost/" class="text-white/80 hover:text-white">Fence</a>
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/deck-cost/" class="text-white/80 hover:text-white">Deck</a>
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/moving-cost/" class="text-white/80 hover:text-white">Moving</a>
-        </div>
-      </div>
-      <div>
-        <div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Site</div>
-        <div class="mt-3 grid gap-1.5 text-[13px]">
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/about/" class="text-white/80 hover:text-white">About</a>
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/privacy/" class="text-white/80 hover:text-white">Privacy</a>
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/disclaimer/" class="text-white/80 hover:text-white">Disclaimer</a>
-          <a href="https://hamzaderkaoui1204-ship-it.github.io/sitemap.xml" class="text-white/80 hover:text-white">Sitemap</a>
-        </div>
-      </div>
+      <div><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Popular</div><div class="mt-3 grid gap-1.5 text-[13px]"><a href="/concrete-slab-cost/" class="text-white/80 hover:text-white">Concrete slab</a><a href="/fence-cost/" class="text-white/80 hover:text-white">Fence</a><a href="/deck-cost/" class="text-white/80 hover:text-white">Deck</a><a href="/moving-cost/" class="text-white/80 hover:text-white">Moving</a></div></div>
+      <div><div class="text-[11px] tracking-[0.12em] font-semibold uppercase text-white/60">Site</div><div class="mt-3 grid gap-1.5 text-[13px]"><a href="/about/" class="text-white/80 hover:text-white">About</a><a href="/privacy/" class="text-white/80 hover:text-white">Privacy</a><a href="/disclaimer/" class="text-white/80 hover:text-white">Disclaimer</a><a href="/sitemap.xml" class="text-white/80 hover:text-white">Sitemap</a></div></div>
     </div>
-    <div class="mt-8 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-3 justify-between text-[12px] text-white/50">
-      <span>© 2026 CostCruncher · Estimates only — get 3 quotes before hiring.</span>
-      <span>As an Amazon Associate we earn from qualifying purchases.</span>
-    </div>
+    <div class="mt-8 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-3 justify-between text-[12px] text-white/50"><span>© 2026 CostCruncher · Estimates only — get 3 quotes before hiring.</span><span>As an Amazon Associate we earn from qualifying purchases.</span></div>
   </div>
 </footer>
-
+<script>document.getElementById('mobileMenuBtn')?.addEventListener('click',()=>document.getElementById('mobileNav')?.classList.toggle('hidden'));</script>
+</body>
+</html>
 <script>
-const DATA = [
-  // Exterior & Yard 41
-  {slug:'concrete-slab-cost', title:'Concrete Slab', blurb:'Price a concrete slab by dimensions, thickness and finish — materials and labor broken out.', cat:'Exterior & Yard'},
-  {slug:'gravel-driveway-cost', title:'Gravel Driveway', blurb:'Calculate tons of gravel, delivery and compaction labor for a new driveway or resurface.', cat:'Exterior & Yard'},
-  {slug:'fence-cost', title:'Fence', blurb:'Price wood, vinyl, chain link or aluminum fencing by length — posts, gates and labor included.', cat:'Exterior & Yard'},
-  {slug:'deck-cost', title:'Deck', blurb:'Compare wood and composite deck costs by size — framing, railing, stairs and labor itemized.', cat:'Exterior & Yard'},
-  {slug:'metal-roof-cost', title:'Metal Roof', blurb:'Price corrugated, metal shingle or standing seam roofing — pitch-adjusted, tear-off included.', cat:'Exterior & Yard'},
-  {slug:'sod-cost', title:'Sod', blurb:'Price new sod by area and grass type — pallets, delivery, soil prep and install labor.', cat:'Exterior & Yard'},
-  {slug:'mulch-cost', title:'Mulch', blurb:'Figure cubic yards needed, bulk vs bag pricing, and spreading labor for any garden bed.', cat:'Exterior & Yard'},
-  {slug:'roof-replacement-cost', title:'Roof Replacement', blurb:'Estimate asphalt shingle roof replacement by roof size and pitch.', cat:'Exterior & Yard'},
-  {slug:'window-replacement-cost', title:'Window Replacement', blurb:'Price window replacement by count and frame material.', cat:'Exterior & Yard'},
-  {slug:'garage-door-cost', title:'Garage Door', blurb:'Price a new garage door by size, material and opener.', cat:'Exterior & Yard'},
-  {slug:'siding-cost', title:'Siding', blurb:'Estimate house siding by wall area and material.', cat:'Exterior & Yard'},
-  {slug:'gutter-cost', title:'Gutter', blurb:'Calculate gutters by linear feet and material.', cat:'Exterior & Yard'},
-  {slug:'driveway-paving-cost', title:'Driveway Paving', blurb:'Price asphalt driveway paving by area.', cat:'Exterior & Yard'},
-  {slug:'retaining-wall-cost', title:'Retaining Wall', blurb:'Estimate retaining wall by length, height and material.', cat:'Exterior & Yard'},
-  {slug:'tree-removal-cost', title:'Tree Removal', blurb:'Price tree removal by height and diameter.', cat:'Exterior & Yard'},
-  {slug:'stump-removal-cost', title:'Stump Removal', blurb:'Calculate stump grinding/removal by diameter.', cat:'Exterior & Yard'},
-  {slug:'pressure-washing-cost', title:'Pressure Washing', blurb:'Estimate pressure washing by area and surface.', cat:'Exterior & Yard'},
-  {slug:'house-painting-exterior-cost', title:'Exterior House Painting', blurb:'Price exterior painting by wall area and stories.', cat:'Exterior & Yard'},
-  {slug:'fence-staining-cost', title:'Fence Staining', blurb:'Price staining/sealing a fence by length.', cat:'Exterior & Yard'},
-  {slug:'deck-staining-cost', title:'Deck Staining', blurb:'Estimate cleaning and staining a deck by area.', cat:'Exterior & Yard'},
-  {slug:'pergola-cost', title:'Pergola', blurb:'Price a pergola by footprint and material.', cat:'Exterior & Yard'},
-  {slug:'shed-cost', title:'Shed', blurb:'Estimate shed build/buy by footprint.', cat:'Exterior & Yard'},
-  {slug:'patio-paver-cost', title:'Patio Paver', blurb:'Calculate paver patio by area and stone type.', cat:'Exterior & Yard'},
-  {slug:'shutter-cost', title:'Shutter', blurb:'Price window shutters by count and material.', cat:'Exterior & Yard'},
-  {slug:'awning-cost', title:'Awning', blurb:'Calculate awning by size and fabric/metal.', cat:'Exterior & Yard'},
-  {slug:'chimney-cost', title:'Chimney', blurb:'Estimate chimney build or repair by height.', cat:'Exterior & Yard'},
-  {slug:'skylight-cost', title:'Skylight Installation', blurb:'Price skylight by count and size.', cat:'Exterior & Yard'},
-  {slug:'concrete-staining-cost', title:'Concrete Staining', blurb:'Estimate staining/sealing concrete by area.', cat:'Exterior & Yard'},
-  {slug:'brick-paver-cost', title:'Brick Paver', blurb:'Calculate brick pavers by patio area.', cat:'Exterior & Yard'},
-  {slug:'asphalt-sealing-cost', title:'Asphalt Sealing', blurb:'Price driveway sealing by area.', cat:'Exterior & Yard'},
-  {slug:'landscaping-cost', title:'Landscaping', blurb:'Estimate full landscaping by yard area.', cat:'Exterior & Yard'},
-  {slug:'artificial-turf-cost', title:'Artificial Turf', blurb:'Price synthetic grass by area.', cat:'Exterior & Yard'},
-  {slug:'sprinkler-system-cost', title:'Sprinkler System', blurb:'Calculate irrigation by zone count.', cat:'Exterior & Yard'},
-  {slug:'pool-cost', title:'Pool Installation', blurb:'Estimate inground pool by size.', cat:'Exterior & Yard'},
-  {slug:'hot-tub-cost', title:'Hot Tub', blurb:'Price hot tub by capacity and features.', cat:'Exterior & Yard'},
-  {slug:'outdoor-kitchen-cost', title:'Outdoor Kitchen', blurb:'Estimate outdoor kitchen by linear feet.', cat:'Exterior & Yard'},
-  {slug:'chain-link-fence-cost', title:'Chain Link Fence', blurb:'Price chain link by linear feet.', cat:'Exterior & Yard'},
-  {slug:'vinyl-fence-cost', title:'Vinyl Fence', blurb:'Calculate vinyl fence by length.', cat:'Exterior & Yard'},
-  {slug:'wood-fence-cost', title:'Wood Fence', blurb:'Estimate wood fence by length and wood type.', cat:'Exterior & Yard'},
-  {slug:'privacy-fence-cost', title:'Privacy Fence', blurb:'Price privacy fence by length and height.', cat:'Exterior & Yard'},
-  {slug:'storm-door-cost', title:'Storm Door', blurb:'Price storm door by count.', cat:'Exterior & Yard'},
-  // Interior 24
-  {slug:'interior-painting-cost', title:'Interior Painting', blurb:'Price painting a room by dimensions — gallons, primer, supplies and pro labor broken out.', cat:'Interior'},
-  {slug:'flooring-cost', title:'Flooring', blurb:'Compare laminate, LVP, hardwood and carpet costs — materials, underlayment and labor itemized.', cat:'Interior'},
-  {slug:'drywall-cost', title:'Drywall', blurb:'Price hanging and finishing drywall by room size and finish level — Level 4, Level 5 or textured.', cat:'Interior'},
-  {slug:'insulation-cost', title:'Attic Insulation', blurb:'Price blown-in attic insulation — material, machine rental and labor by target R-value.', cat:'Interior'},
-  {slug:'moving-cost', title:'Moving', blurb:'Price a local or long-distance move — crew hours, truck, fuel, packing and stairs itemized.', cat:'Interior'},
-  {slug:'kitchen-remodel-cost', title:'Kitchen Remodel', blurb:'Estimate a full kitchen remodel by size and finish level — cabinets, counters, labor broken out.', cat:'Interior'},
-  {slug:'bathroom-remodel-cost', title:'Bathroom Remodel', blurb:'Price a bathroom remodel by square feet and fixture grade — labor, tile and fixtures itemized.', cat:'Interior'},
-  {slug:'basement-finishing-cost', title:'Basement Finishing', blurb:'Calculate cost to finish a basement by area and finish level.', cat:'Interior'},
-  {slug:'cabinet-refacing-cost', title:'Cabinet Refacing', blurb:'Estimate cabinet refacing vs replacing by linear feet.', cat:'Interior'},
-  {slug:'countertop-cost', title:'Countertop', blurb:'Compare countertop materials by square feet.', cat:'Interior'},
-  {slug:'tile-installation-cost', title:'Tile Installation', blurb:'Price tile by area and tile type.', cat:'Interior'},
-  {slug:'hardwood-refinishing-cost', title:'Hardwood Refinishing', blurb:'Estimate sanding and refinishing hardwood floors.', cat:'Interior'},
-  {slug:'carpet-installation-cost', title:'Carpet Installation', blurb:'Price new carpet by area and pad grade.', cat:'Interior'},
-  {slug:'fireplace-cost', title:'Fireplace', blurb:'Price fireplace install by type and wall.', cat:'Interior'},
-  {slug:'home-addition-cost', title:'Home Addition', blurb:'Price a home addition by square feet and stories.', cat:'Interior'},
-  {slug:'closet-remodel-cost', title:'Closet Remodel', blurb:'Price custom closet by linear feet and system.', cat:'Interior'},
-  {slug:'door-installation-cost', title:'Door Installation', blurb:'Estimate interior/exterior door install by count.', cat:'Interior'},
-  {slug:'drywall-repair-cost', title:'Drywall Repair', blurb:'Price drywall patch and repair by area.', cat:'Interior'},
-  {slug:'popcorn-ceiling-removal-cost', title:'Popcorn Ceiling Removal', blurb:'Estimate removal by ceiling area.', cat:'Interior'},
-  {slug:'wallpaper-removal-cost', title:'Wallpaper Removal', blurb:'Calculate wallpaper removal by wall area.', cat:'Interior'},
-  {slug:'epoxy-floor-cost', title:'Epoxy Floor', blurb:'Price epoxy coating by floor area.', cat:'Interior'},
-  {slug:'barn-door-cost', title:'Barn Door', blurb:'Price barn door by count and hardware.', cat:'Interior'},
-  {slug:'closet-door-cost', title:'Closet Door', blurb:'Estimate closet doors by count.', cat:'Interior'},
-  {slug:'sliding-door-cost', title:'Sliding Door', blurb:'Calculate sliding patio door by count.', cat:'Interior'},
-  // Systems 7
-  {slug:'hvac-replacement-cost', title:'HVAC Replacement', blurb:'Estimate HVAC system replacement by home size and efficiency.', cat:'Systems & Energy'},
-  {slug:'water-heater-cost', title:'Water Heater', blurb:'Compare tank vs tankless water heater installed cost.', cat:'Systems & Energy'},
-  {slug:'appliance-installation-cost', title:'Appliance Installation', blurb:'Estimate appliance delivery and install by count.', cat:'Systems & Energy'},
-  {slug:'solar-panel-cost', title:'Solar Panel', blurb:'Estimate solar by system size and roof.', cat:'Systems & Energy'},
-  {slug:'insulation-spray-foam-cost', title:'Spray Foam Insulation', blurb:'Compare open vs closed cell spray foam by area.', cat:'Systems & Energy'},
-  {slug:'mold-remediation-cost', title:'Mold Remediation', blurb:'Estimate mold removal by affected area.', cat:'Systems & Energy'},
-  {slug:'asbestos-removal-cost', title:'Asbestos Removal', blurb:'Price asbestos abatement by area.', cat:'Systems & Energy'},
-];
-
-const PHOTOS = {
-  'concrete-slab-cost':'concrete,foundation,slab',
-  'gravel-driveway-cost':'gravel,driveway,landscape',
-  'fence-cost':'fence,wood-fence',
-  'deck-cost':'deck,wood-deck,patio',
-  'metal-roof-cost':'metal-roof,roofing',
-  'sod-cost':'sod,lawn,grass',
-  'mulch-cost':'mulch,garden-bed',
-  'roof-replacement-cost':'roof,shingles,house-roof',
-  'window-replacement-cost':'window,house-window',
-  'garage-door-cost':'garage,garage-door',
-  'siding-cost':'siding,house-exterior',
-  'gutter-cost':'gutter,rain-gutter',
-  'driveway-paving-cost':'asphalt,driveway,paving',
-  'retaining-wall-cost':'retaining-wall,stone-wall',
-  'tree-removal-cost':'tree-removal,arborist',
-  'stump-removal-cost':'tree-stump,stump-grinder',
-  'pressure-washing-cost':'pressure-washing,house-wash',
-  'house-painting-exterior-cost':'house-painting,exterior-paint',
-  'fence-staining-cost':'fence-staining,wood-stain',
-  'deck-staining-cost':'deck-staining,wood-deck',
-  'pergola-cost':'pergola,backyard',
-  'shed-cost':'shed,garden-shed,backyard',
-  'patio-paver-cost':'paver,patio-stone',
-  'shutter-cost':'shutter,window-shutter',
-  'awning-cost':'awning,house-awning',
-  'chimney-cost':'chimney,brick-chimney',
-  'skylight-cost':'skylight,roof-window',
-  'concrete-staining-cost':'concrete-stain,polished-concrete',
-  'brick-paver-cost':'brick-paver,patio-brick',
-  'asphalt-sealing-cost':'asphalt,sealcoat',
-  'landscaping-cost':'landscaping,yard,garden',
-  'artificial-turf-cost':'artificial-turf,synthetic-grass',
-  'sprinkler-system-cost':'sprinkler,irrigation,lawn',
-  'pool-cost':'pool,swimming-pool,backyard-pool',
-  'hot-tub-cost':'hot-tub,jacuzzi',
-  'outdoor-kitchen-cost':'outdoor-kitchen,bbq-island',
-  'chain-link-fence-cost':'chain-link-fence',
-  'vinyl-fence-cost':'vinyl-fence,white-fence',
-  'wood-fence-cost':'wood-fence,cedar-fence',
-  'privacy-fence-cost':'privacy-fence,backyard-fence',
-  'storm-door-cost':'storm-door,front-door',
-  'interior-painting-cost':'interior-painting,paint-roller',
-  'flooring-cost':'flooring,hardwood-floor',
-  'drywall-cost':'drywall,gypsum-wall',
-  'insulation-cost':'attic-insulation,insulation',
-  'moving-cost':'moving,relocation,truck',
-  'kitchen-remodel-cost':'kitchen,kitchen-remodel',
-  'bathroom-remodel-cost':'bathroom,bathroom-remodel',
-  'basement-finishing-cost':'basement,finished-basement',
-  'cabinet-refacing-cost':'kitchen-cabinet,cabinet',
-  'countertop-cost':'countertop,kitchen-counter',
-  'tile-installation-cost':'tile,tiling,bathroom-tile',
-  'hardwood-refinishing-cost':'hardwood-floor,wood-floor-refinish',
-  'carpet-installation-cost':'carpet,carpet-floor',
-  'fireplace-cost':'fireplace,living-room-fireplace',
-  'home-addition-cost':'home-addition,house-extension',
-  'closet-remodel-cost':'closet,walk-in-closet',
-  'door-installation-cost':'interior-door,door-install',
-  'drywall-repair-cost':'drywall-repair,wall-patch',
-  'popcorn-ceiling-removal-cost':'popcorn-ceiling,ceiling',
-  'wallpaper-removal-cost':'wallpaper,wallpaper-removal',
-  'epoxy-floor-cost':'epoxy-floor,garage-floor',
-  'barn-door-cost':'barn-door,sliding-barn-door',
-  'closet-door-cost':'closet-door',
-  'sliding-door-cost':'sliding-door,patio-door',
-  'hvac-replacement-cost':'hvac,air-conditioner',
-  'water-heater-cost':'water-heater',
-  'appliance-installation-cost':'kitchen-appliance,appliance',
-  'solar-panel-cost':'solar-panel,rooftop-solar',
-  'insulation-spray-foam-cost':'spray-foam,insulation-foam',
-  'mold-remediation-cost':'mold,water-damage',
-  'asbestos-removal-cost':'asbestos,abatement'
-};
-function imgFor(c, w, h){
-  const kw = PHOTOS[c.slug] || c.title.toLowerCase().replace(/[^a-z0-9]+/g,',');
-  // Use Unsplash Source for subject-matched stock — deterministic via keyword
-  return `https://source.unsplash.com/${w}x${h}/?${encodeURIComponent(kw)}`;
-}
-function cardHTML(c, opts={}) {
-  const img = imgFor(c, 400, 240);
-  if (opts.compact) {
-    // Systems: horizontal compact
-    return `<a href="https://hamzaderkaoui1204-ship-it.github.io/${c.slug}/" class="group flex gap-4 p-4 rounded-2xl border border-line bg-white hover:border-ink/15 hover:shadow-[0_8px_24px_rgba(20,26,38,0.06)] transition">
-      <img src="${img}" alt="${c.title} photo" loading="lazy" onerror="this.src='https://picsum.photos/seed/${c.slug}/200/200'" class="w-[88px] h-[88px] rounded-xl object-cover border border-line shrink-0">
-      <div class="min-w-0 flex-1">
-        <h3 class="font-semibold tracking-tight leading-tight">${c.title}</h3>
-        <p class="text-[13px] leading-snug text-muted mt-1 line-clamp-2">${c.blurb}</p>
-        <span class="mt-2 inline-flex text-[12px] font-semibold text-accent">Calculate →</span>
-      </div>
-    </a>`;
-  }
-  if (opts.editorial) {
-    return `<a href="https://hamzaderkaoui1204-ship-it.github.io/${c.slug}/" class="group rounded-2xl border border-line bg-white p-4 hover:border-ink/15 hover:shadow-[0_8px_24px_rgba(20,26,38,0.06)] hover:-translate-y-0.5 transition flex flex-col">
-      <div class="flex items-start justify-between gap-3">
-        <h3 class="font-semibold tracking-tight leading-tight">${c.title}</h3>
-        <span class="shrink-0 w-7 h-7 rounded-full border border-line grid place-items-center text-muted group-hover:bg-ink group-hover:text-white group-hover:border-ink transition">→</span>
-      </div>
-      <p class="text-[13px] leading-relaxed text-muted mt-2 flex-1">${c.blurb}</p>
-      <img src="${img}" alt="${c.title} photo" loading="lazy" onerror="this.src='https://picsum.photos/seed/${c.slug}/400/240'" class="mt-4 rounded-xl w-full h-[128px] object-cover border border-line">
-    </a>`;
-  }
-  // default bento
-  return `<a href="https://hamzaderkaoui1204-ship-it.github.io/${c.slug}/" class="calc-item group rounded-2xl border border-line bg-white overflow-hidden hover:border-ink/15 hover:shadow-[0_12px_28px_rgba(20,26,38,0.08)] hover:-translate-y-1 transition flex flex-col" data-cat="${c.cat}" data-title="${c.title.toLowerCase()}" data-blurb="${c.blurb.toLowerCase()}">
-    <img src="${img}" alt="${c.title} photo" loading="lazy" onerror="this.src='https://picsum.photos/seed/${c.slug}/400/240'" class="w-full h-[132px] object-cover">
-    <div class="p-4 flex flex-col flex-1">
-      <h3 class="font-semibold tracking-tight leading-tight text-[15px]">${c.title}</h3>
-      <p class="text-[13px] leading-snug text-muted mt-1.5 flex-1">${c.blurb}</p>
-      <span class="mt-3 inline-flex items-center gap-1.5 text-[12px] font-semibold text-accent">Calculate <span class="group-hover:translate-x-0.5 transition">→</span></span>
-    </div>
-  </a>`;
-}
-
-const exteriorEl = document.getElementById('grid-exterior');
-const interiorEl = document.getElementById('grid-interior');
-const systemsEl = document.getElementById('grid-systems');
-
-let showAllExterior = false;
-function render() {
-  const q = document.getElementById('search').value.toLowerCase().trim();
-  const activeCat = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
-  
-  // filter function
-  const match = (c) => {
-    if (activeCat !== 'all' && c.cat !== activeCat) return false;
-    if (q && !(c.title.toLowerCase().includes(q) || c.blurb.toLowerCase().includes(q) || c.slug.includes(q))) return false;
-    return true;
-  };
-
-  // Exterior
-  const ex = DATA.filter(c=>c.cat==='Exterior & Yard').filter(match);
-  const exToShow = (!q && activeCat==='all' && !showAllExterior) ? ex.slice(0,8) : ex;
-  exteriorEl.innerHTML = exToShow.map(c=>cardHTML(c)).join('') || `<div class="col-span-full py-12 text-center text-muted">No calculators match “${q}”</div>`;
-  document.getElementById('toggleExterior').style.display = (!q && activeCat==='all' && ex.length>8) ? 'flex' : 'none';
-  document.getElementById('toggleExterior').textContent = showAllExterior ? 'Show less' : `Show all ${ex.length}`;
-
-  // Interior
-  const inn = DATA.filter(c=>c.cat==='Interior').filter(match);
-  interiorEl.innerHTML = inn.map(c=>cardHTML(c,{editorial:true})).join('') || `<div class="col-span-full py-12 text-center text-muted">No match</div>`;
-  
-  // Systems
-  const sys = DATA.filter(c=>c.cat==='Systems & Energy').filter(match);
-  systemsEl.innerHTML = sys.map(c=>cardHTML(c,{compact:true})).join('') || `<div class="col-span-full py-8 text-center text-muted">No match</div>`;
-
-  // hide sections when filtered
-  document.getElementById('exterior').style.display = (activeCat==='all' || activeCat==='Exterior & Yard') ? '' : 'none';
-  document.getElementById('interior').parentElement.style.display = (activeCat==='all' || activeCat==='Interior') ? '' : 'none';
-  document.getElementById('systems').style.display = (activeCat==='all' || activeCat==='Systems & Energy') ? '' : 'none';
-  
-  const totalMatch = DATA.filter(match).length;
-  const rc = document.getElementById('resultCount');
-  if (q || activeCat!=='all') { rc.textContent = `${totalMatch} results`; rc.classList.remove('hidden'); } else rc.classList.add('hidden');
-}
-
-document.getElementById('search').addEventListener('input', render);
-document.querySelectorAll('.filter-btn').forEach(b=> b.addEventListener('click', ()=>{
-  document.querySelectorAll('.filter-btn').forEach(x=> x.className='filter-btn whitespace-nowrap h-8 px-4 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20');
-  b.className='filter-btn active whitespace-nowrap h-8 px-4 rounded-full bg-ink text-white text-[13px] font-semibold';
-  render();
-  if (b.dataset.filter!=='all') document.getElementById(b.dataset.filter==='Exterior & Yard'?'exterior': b.dataset.filter==='Interior'?'interior':'systems').scrollIntoView({behavior:'smooth', block:'start'});
-}));
-document.getElementById('toggleExterior').addEventListener('click', ()=>{ showAllExterior=!showAllExterior; render(); });
-document.getElementById('mobileMenuBtn').addEventListener('click', ()=> document.getElementById('mobileNav').classList.toggle('hidden'));
-
-// initial
+const DATA = [{"slug":"concrete-slab-cost","title":"Concrete Slab","blurb":"Price a concrete slab by dimensions, thickness and finish — materials and labor broken out.","cat":"Exterior & Yard"},{"slug":"gravel-driveway-cost","title":"Gravel Driveway","blurb":"Calculate tons of gravel, delivery and compaction labor for a new driveway or resurface.","cat":"Exterior & Yard"},{"slug":"fence-cost","title":"Fence","blurb":"Price wood, vinyl, chain link or aluminum fencing by length — posts, gates and labor included.","cat":"Exterior & Yard"},{"slug":"deck-cost","title":"Deck","blurb":"Compare wood and composite deck costs by size — framing, railing, stairs and labor itemized.","cat":"Exterior & Yard"},{"slug":"metal-roof-cost","title":"Metal Roof","blurb":"Price corrugated, metal shingle or standing seam roofing — pitch-adjusted, tear-off included.","cat":"Exterior & Yard"},{"slug":"sod-cost","title":"Sod","blurb":"Price new sod by area and grass type — pallets, delivery, soil prep and install labor.","cat":"Exterior & Yard"},{"slug":"mulch-cost","title":"Mulch","blurb":"Figure cubic yards needed, bulk vs bag pricing, and spreading labor for any garden bed.","cat":"Exterior & Yard"},{"slug":"interior-painting-cost","title":"Interior Painting","blurb":"Price painting a room by dimensions — gallons, primer, supplies and pro labor broken out.","cat":"Interior"},{"slug":"flooring-cost","title":"Flooring","blurb":"Compare laminate, LVP, hardwood and carpet costs — materials, underlayment and labor itemized.","cat":"Interior"},{"slug":"drywall-cost","title":"Drywall","blurb":"Price hanging and finishing drywall by room size and finish level — Level 4, Level 5 or textured.","cat":"Interior"},{"slug":"insulation-cost","title":"Attic Insulation","blurb":"Price blown-in attic insulation — material, machine rental and labor by target R-value.","cat":"Interior"},{"slug":"moving-cost","title":"Moving","blurb":"Price a local or long-distance move — crew hours, truck, fuel, packing and stairs itemized.","cat":"Interior"},{"slug":"kitchen-remodel-cost","title":"Kitchen Remodel","blurb":"Estimate a full kitchen remodel by size and finish level — cabinets, counters, labor broken out.","cat":"Interior"},{"slug":"bathroom-remodel-cost","title":"Bathroom Remodel","blurb":"Price a bathroom remodel by square feet and fixture grade — labor, tile and fixtures itemized.","cat":"Interior"},{"slug":"basement-finishing-cost","title":"Basement Finishing","blurb":"Calculate cost to finish a basement by area and finish level.","cat":"Interior"},{"slug":"roof-replacement-cost","title":"Roof Replacement","blurb":"Estimate asphalt shingle roof replacement by roof size and pitch.","cat":"Exterior & Yard"},{"slug":"window-replacement-cost","title":"Window Replacement","blurb":"Price window replacement by count and frame material.","cat":"Exterior & Yard"},{"slug":"hvac-replacement-cost","title":"HVAC Replacement","blurb":"Estimate HVAC system replacement by home size and efficiency.","cat":"Systems & Energy"},{"slug":"water-heater-cost","title":"Water Heater","blurb":"Compare tank vs tankless water heater installed cost.","cat":"Systems & Energy"},{"slug":"garage-door-cost","title":"Garage Door","blurb":"Price a new garage door by size, material and opener.","cat":"Exterior & Yard"},{"slug":"siding-cost","title":"Siding","blurb":"Estimate house siding by wall area and material.","cat":"Exterior & Yard"},{"slug":"gutter-cost","title":"Gutter","blurb":"Calculate gutters by linear feet and material.","cat":"Exterior & Yard"},{"slug":"driveway-paving-cost","title":"Driveway Paving","blurb":"Price asphalt driveway paving by area.","cat":"Exterior & Yard"},{"slug":"retaining-wall-cost","title":"Retaining Wall","blurb":"Estimate retaining wall by length, height and material.","cat":"Exterior & Yard"},{"slug":"tree-removal-cost","title":"Tree Removal","blurb":"Price tree removal by height and diameter.","cat":"Exterior & Yard"},{"slug":"stump-removal-cost","title":"Stump Removal","blurb":"Calculate stump grinding/removal by diameter.","cat":"Exterior & Yard"},{"slug":"pressure-washing-cost","title":"Pressure Washing","blurb":"Estimate pressure washing by area and surface.","cat":"Exterior & Yard"},{"slug":"house-painting-exterior-cost","title":"Exterior House Painting","blurb":"Price exterior painting by wall area and stories.","cat":"Exterior & Yard"},{"slug":"cabinet-refacing-cost","title":"Cabinet Refacing","blurb":"Estimate cabinet refacing vs replacing by linear feet.","cat":"Interior"},{"slug":"countertop-cost","title":"Countertop","blurb":"Compare countertop materials by square feet.","cat":"Interior"},{"slug":"tile-installation-cost","title":"Tile Installation","blurb":"Price tile by area and tile type.","cat":"Interior"},{"slug":"hardwood-refinishing-cost","title":"Hardwood Refinishing","blurb":"Estimate sanding and refinishing hardwood floors.","cat":"Interior"},{"slug":"carpet-installation-cost","title":"Carpet Installation","blurb":"Price new carpet by area and pad grade.","cat":"Interior"},{"slug":"appliance-installation-cost","title":"Appliance Installation","blurb":"Estimate appliance delivery and install by count.","cat":"Systems & Energy"},{"slug":"fence-staining-cost","title":"Fence Staining","blurb":"Price staining/sealing a fence by length.","cat":"Exterior & Yard"},{"slug":"deck-staining-cost","title":"Deck Staining","blurb":"Estimate cleaning and staining a deck by area.","cat":"Exterior & Yard"},{"slug":"pergola-cost","title":"Pergola","blurb":"Price a pergola by footprint and material.","cat":"Exterior & Yard"},{"slug":"shed-cost","title":"Shed","blurb":"Estimate shed build/buy by footprint.","cat":"Exterior & Yard"},{"slug":"patio-paver-cost","title":"Patio Paver","blurb":"Calculate paver patio by area and stone type.","cat":"Exterior & Yard"},{"slug":"fireplace-cost","title":"Fireplace","blurb":"Price fireplace install by type and wall.","cat":"Interior"},{"slug":"solar-panel-cost","title":"Solar Panel","blurb":"Estimate solar by system size and roof.","cat":"Systems & Energy"},{"slug":"home-addition-cost","title":"Home Addition","blurb":"Price a home addition by square feet and stories.","cat":"Interior"},{"slug":"closet-remodel-cost","title":"Closet Remodel","blurb":"Price custom closet by linear feet and system.","cat":"Interior"},{"slug":"door-installation-cost","title":"Door Installation","blurb":"Estimate interior/exterior door install by count.","cat":"Interior"},{"slug":"shutter-cost","title":"Shutter","blurb":"Price window shutters by count and material.","cat":"Exterior & Yard"},{"slug":"awning-cost","title":"Awning","blurb":"Calculate awning by size and fabric/metal.","cat":"Exterior & Yard"},{"slug":"chimney-cost","title":"Chimney","blurb":"Estimate chimney build or repair by height.","cat":"Exterior & Yard"},{"slug":"skylight-cost","title":"Skylight Installation","blurb":"Price skylight by count and size.","cat":"Exterior & Yard"},{"slug":"insulation-spray-foam-cost","title":"Spray Foam Insulation","blurb":"Compare open vs closed cell spray foam by area.","cat":"Systems & Energy"},{"slug":"drywall-repair-cost","title":"Drywall Repair","blurb":"Price drywall patch and repair by area.","cat":"Interior"},{"slug":"popcorn-ceiling-removal-cost","title":"Popcorn Ceiling Removal","blurb":"Estimate removal by ceiling area.","cat":"Interior"},{"slug":"wallpaper-removal-cost","title":"Wallpaper Removal","blurb":"Calculate wallpaper removal by wall area.","cat":"Interior"},{"slug":"epoxy-floor-cost","title":"Epoxy Floor","blurb":"Price epoxy coating by floor area.","cat":"Interior"},{"slug":"concrete-staining-cost","title":"Concrete Staining","blurb":"Estimate staining/sealing concrete by area.","cat":"Exterior & Yard"},{"slug":"brick-paver-cost","title":"Brick Paver","blurb":"Calculate brick pavers by patio area.","cat":"Exterior & Yard"},{"slug":"asphalt-sealing-cost","title":"Asphalt Sealing","blurb":"Price driveway sealing by area.","cat":"Exterior & Yard"},{"slug":"landscaping-cost","title":"Landscaping","blurb":"Estimate full landscaping by yard area.","cat":"Exterior & Yard"},{"slug":"artificial-turf-cost","title":"Artificial Turf","blurb":"Price synthetic grass by area.","cat":"Exterior & Yard"},{"slug":"sprinkler-system-cost","title":"Sprinkler System","blurb":"Calculate irrigation by zone count.","cat":"Exterior & Yard"},{"slug":"pool-cost","title":"Pool Installation","blurb":"Estimate inground pool by size.","cat":"Exterior & Yard"},{"slug":"hot-tub-cost","title":"Hot Tub","blurb":"Price hot tub by capacity and features.","cat":"Exterior & Yard"},{"slug":"outdoor-kitchen-cost","title":"Outdoor Kitchen","blurb":"Estimate outdoor kitchen by linear feet.","cat":"Exterior & Yard"},{"slug":"chain-link-fence-cost","title":"Chain Link Fence","blurb":"Price chain link by linear feet.","cat":"Exterior & Yard"},{"slug":"vinyl-fence-cost","title":"Vinyl Fence","blurb":"Calculate vinyl fence by length.","cat":"Exterior & Yard"},{"slug":"wood-fence-cost","title":"Wood Fence","blurb":"Estimate wood fence by length and wood type.","cat":"Exterior & Yard"},{"slug":"privacy-fence-cost","title":"Privacy Fence","blurb":"Price privacy fence by length and height.","cat":"Exterior & Yard"},{"slug":"barn-door-cost","title":"Barn Door","blurb":"Price barn door by count and hardware.","cat":"Interior"},{"slug":"closet-door-cost","title":"Closet Door","blurb":"Estimate closet doors by count.","cat":"Interior"},{"slug":"sliding-door-cost","title":"Sliding Door","blurb":"Calculate sliding patio door by count.","cat":"Interior"},{"slug":"storm-door-cost","title":"Storm Door","blurb":"Price storm door by count.","cat":"Exterior & Yard"},{"slug":"mold-remediation-cost","title":"Mold Remediation","blurb":"Estimate mold removal by affected area.","cat":"Systems & Energy"},{"slug":"asbestos-removal-cost","title":"Asbestos Removal","blurb":"Price asbestos abatement by area.","cat":"Systems & Energy"}];
+const PHOTOS = {"concrete-slab-cost":"concrete,foundation,slab","gravel-driveway-cost":"gravel,driveway,landscape","fence-cost":"fence,wood-fence","deck-cost":"deck,wood-deck,patio","metal-roof-cost":"metal-roof,roofing","sod-cost":"sod,lawn,grass","mulch-cost":"mulch,garden-bed","roof-replacement-cost":"roof,shingles,house-roof","window-replacement-cost":"window,house-window","garage-door-cost":"garage,garage-door","siding-cost":"siding,house-exterior","gutter-cost":"gutter,rain-gutter","driveway-paving-cost":"asphalt,driveway,paving","retaining-wall-cost":"retaining-wall,stone-wall","tree-removal-cost":"tree-removal,arborist","stump-removal-cost":"tree-stump,stump-grinder","pressure-washing-cost":"pressure-washing,house-wash","house-painting-exterior-cost":"house-painting,exterior-paint","fence-staining-cost":"fence-staining,wood-stain","deck-staining-cost":"deck-staining,wood-deck","pergola-cost":"pergola,backyard","shed-cost":"shed,garden-shed,backyard","patio-paver-cost":"paver,patio-stone","shutter-cost":"shutter,window-shutter","awning-cost":"awning,house-awning","chimney-cost":"chimney,brick-chimney","skylight-cost":"skylight,roof-window","concrete-staining-cost":"concrete-stain,polished-concrete","brick-paver-cost":"brick-paver,patio-brick","asphalt-sealing-cost":"asphalt,sealcoat","landscaping-cost":"landscaping,yard,garden","artificial-turf-cost":"artificial-turf,synthetic-grass","sprinkler-system-cost":"sprinkler,irrigation,lawn","pool-cost":"pool,swimming-pool,backyard-pool","hot-tub-cost":"hot-tub,jacuzzi","outdoor-kitchen-cost":"outdoor-kitchen,bbq-island","chain-link-fence-cost":"chain-link-fence","vinyl-fence-cost":"vinyl-fence,white-fence","wood-fence-cost":"wood-fence,cedar-fence","privacy-fence-cost":"privacy-fence,backyard-fence","storm-door-cost":"storm-door,front-door","interior-painting-cost":"interior-painting,paint-roller","flooring-cost":"flooring,hardwood-floor","drywall-cost":"drywall,gypsum-wall","insulation-cost":"attic-insulation,insulation","moving-cost":"moving,relocation,truck","kitchen-remodel-cost":"kitchen,kitchen-remodel","bathroom-remodel-cost":"bathroom,bathroom-remodel","basement-finishing-cost":"basement,finished-basement","cabinet-refacing-cost":"kitchen-cabinet,cabinet","countertop-cost":"countertop,kitchen-counter","tile-installation-cost":"tile,tiling,bathroom-tile","hardwood-refinishing-cost":"hardwood-floor,wood-floor-refinish","carpet-installation-cost":"carpet,carpet-floor","fireplace-cost":"fireplace,living-room-fireplace","home-addition-cost":"home-addition,house-extension","closet-remodel-cost":"closet,walk-in-closet","door-installation-cost":"interior-door,door-install","drywall-repair-cost":"drywall-repair,wall-patch","popcorn-ceiling-removal-cost":"popcorn-ceiling,ceiling","wallpaper-removal-cost":"wallpaper,wallpaper-removal","epoxy-floor-cost":"epoxy-floor,garage-floor","barn-door-cost":"barn-door,sliding-barn-door","closet-door-cost":"closet-door","sliding-door-cost":"sliding-door,patio-door","hvac-replacement-cost":"hvac,air-conditioner","water-heater-cost":"water-heater","appliance-installation-cost":"kitchen-appliance,appliance","solar-panel-cost":"solar-panel,rooftop-solar","insulation-spray-foam-cost":"spray-foam,insulation-foam","mold-remediation-cost":"mold,water-damage","asbestos-removal-cost":"asbestos,abatement"};
+function imgFor(c,w,h){const kw=PHOTOS[c.slug]||c.title.toLowerCase().replace(/[^a-z0-9]+/g,',');return `https://source.unsplash.com/${w}x${h}/?${encodeURIComponent(kw)}`;}
+function cardHTML(c,opts={}){const img=imgFor(c,400,240);if(opts.compact){return `<a href="/${c.slug}/" class="group flex gap-4 p-4 rounded-2xl border border-line bg-white hover:border-ink/15 hover:shadow-[0_8px_24px_rgba(20,26,38,0.06)] transition"><img src="${img}" alt="${c.title} photo" loading="lazy" onerror="this.src='https://picsum.photos/seed/${c.slug}/200/200'" class="w-[88px] h-[88px] rounded-xl object-cover border border-line shrink-0"><div class="min-w-0 flex-1"><h3 class="font-semibold tracking-tight leading-tight">${c.title}</h3><p class="text-[13px] leading-snug text-muted mt-1 line-clamp-2">${c.blurb}</p><span class="mt-2 inline-flex text-[12px] font-semibold text-accent">Calculate →</span></div></a>`;}if(opts.editorial){return `<a href="/${c.slug}/" class="group rounded-2xl border border-line bg-white p-4 hover:border-ink/15 hover:shadow-[0_8px_24px_rgba(20,26,38,0.06)] hover:-translate-y-0.5 transition flex flex-col"><div class="flex items-start justify-between gap-3"><h3 class="font-semibold tracking-tight leading-tight">${c.title}</h3><span class="shrink-0 w-7 h-7 rounded-full border border-line grid place-items-center text-muted group-hover:bg-ink group-hover:text-white group-hover:border-ink transition">→</span></div><p class="text-[13px] leading-relaxed text-muted mt-2 flex-1">${c.blurb}</p><img src="${img}" alt="${c.title} photo" loading="lazy" onerror="this.src='https://picsum.photos/seed/${c.slug}/400/240'" class="mt-4 rounded-xl w-full h-[128px] object-cover border border-line"></a>`;}return `<a href="/${c.slug}/" class="calc-item group rounded-2xl border border-line bg-white overflow-hidden hover:border-ink/15 hover:shadow-[0_12px_28px_rgba(20,26,38,0.08)] hover:-translate-y-1 transition flex flex-col"><img src="${img}" alt="${c.title} photo" loading="lazy" onerror="this.src='https://picsum.photos/seed/${c.slug}/400/240'" class="w-full h-[132px] object-cover"><div class="p-4 flex flex-col flex-1"><h3 class="font-semibold tracking-tight leading-tight text-[15px]">${c.title}</h3><p class="text-[13px] leading-snug text-muted mt-1.5 flex-1">${c.blurb}</p><span class="mt-3 inline-flex items-center gap-1.5 text-[12px] font-semibold text-accent">Calculate <span class="group-hover:translate-x-0.5 transition">→</span></span></div></a>`;}
+const exteriorEl=document.getElementById('grid-exterior');const interiorEl=document.getElementById('grid-interior');const systemsEl=document.getElementById('grid-systems');let showAllExterior=false;
+function render(){const q=document.getElementById('search').value.toLowerCase().trim();const activeCat=document.querySelector('.filter-btn.active')?.dataset.filter||'all';const match=c=>{if(activeCat!=='all'&&c.cat!==activeCat)return false;if(q&&!(c.title.toLowerCase().includes(q)||c.blurb.toLowerCase().includes(q)||c.slug.includes(q)))return false;return true;};const ex=DATA.filter(c=>c.cat==='Exterior & Yard').filter(match);const exToShow=(!q&&activeCat==='all'&&!showAllExterior)?ex.slice(0,8):ex;exteriorEl.innerHTML=exToShow.map(c=>cardHTML(c)).join('')||`<div class="col-span-full py-12 text-center text-muted">No calculators match “${q}”</div>`;document.getElementById('toggleExterior').style.display=(!q&&activeCat==='all'&&ex.length>8)?'flex':'none';document.getElementById('toggleExterior').textContent=showAllExterior?'Show less':`Show all ${ex.length}`;const inn=DATA.filter(c=>c.cat==='Interior').filter(match);interiorEl.innerHTML=inn.map(c=>cardHTML(c,{editorial:true})).join('')||`<div class="col-span-full py-12 text-center text-muted">No match</div>`;const sys=DATA.filter(c=>c.cat==='Systems & Energy').filter(match);systemsEl.innerHTML=sys.map(c=>cardHTML(c,{compact:true})).join('')||`<div class="col-span-full py-8 text-center text-muted">No match</div>`;document.getElementById('exterior').style.display=(activeCat==='all'||activeCat==='Exterior & Yard')?'':'none';document.getElementById('interior').parentElement.style.display=(activeCat==='all'||activeCat==='Interior')?'':'none';document.getElementById('systems').style.display=(activeCat==='all'||activeCat==='Systems & Energy')?'':'none';const totalMatch=DATA.filter(match).length;const rc=document.getElementById('resultCount');if(q||activeCat!=='all'){rc.textContent=`${totalMatch} results`;rc.classList.remove('hidden');}else rc.classList.add('hidden');}
+document.getElementById('search').addEventListener('input',render);document.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(x=>x.className='filter-btn whitespace-nowrap h-8 px-4 rounded-full bg-white border border-line text-[13px] font-medium hover:border-ink/20');b.className='filter-btn active whitespace-nowrap h-8 px-4 rounded-full bg-ink text-white text-[13px] font-semibold';render();if(b.dataset.filter!=='all')document.getElementById(b.dataset.filter==='Exterior & Yard'?'exterior':b.dataset.filter==='Interior'?'interior':'systems').scrollIntoView({behavior:'smooth',block:'start'});}));document.getElementById('toggleExterior').addEventListener('click',()=>{showAllExterior=!showAllExterior;render();});
 render();
-
-// reveal on scroll
-const ro = new IntersectionObserver((entries)=> entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); }), {threshold:0.12});
-document.querySelectorAll('.reveal').forEach(el=> ro.observe(el));
 </script>
 </body>
 </html>
